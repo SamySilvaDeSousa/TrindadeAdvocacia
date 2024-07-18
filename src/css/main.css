@@ -1,0 +1,7 @@
+@import './animations.css';
+@import './reset.css';
+@import './fonts.css';
+
+@import './components/global.css';
+@import './components/scrollbar.css';
+@import './components/titles.css';
