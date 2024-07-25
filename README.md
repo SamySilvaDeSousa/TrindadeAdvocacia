@@ -17,11 +17,11 @@
   <br>
 
   ## Tecnologias Usadas 👇
-  <img src="https://skillicons.dev/icons?i=html,css,javascript,bootstrap" />
+  <img src="https://skillicons.dev/icons?i=html,css,javascript,tailwind" />
 
   ![HTML](https://badgen.net/badge/Label/HTML/E14E1D?icon=icon&label=)
   ![CSS](https://badgen.net/badge/Label/CSS/0277BD?icon=icon&label=)
   ![Javascript](https://badgen.net/badge/Label/Javascript/F0DB4F?icon=icon&label=)
-  ![Bootstrap](https://badgen.net/badge/Label/Bootstrap/purple?icon=icon&label=)
+  ![TailwindCSS](https://badgen.net/badge/Label/TailwindCSS/23BBBC?icon=icon&label=)
 </div>
   
