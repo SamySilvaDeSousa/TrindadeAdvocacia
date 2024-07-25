@@ -14,6 +14,7 @@
   animation: refreshPage 1s ease-in-out forwards
 }
 
+
 @keyframes grow {
   0% {
     width: 0%;
@@ -22,3 +23,59 @@
     width: 100%;
   }
 }
+@keyframes shrink {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+#navbar-desktop a::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #eab308;
+  animation: shrink 200ms ease-in-out forwards;
+}
+
+#navbar-desktop a:hover::before {
+  animation: grow 200ms ease-in-out forwards;
+}
+
+
+@media (min-width: 1280px) {
+  @keyframes desaparecendo {
+    0% {
+      opacity: 1;
+      display: flex;
+    }
+    100% {
+      opacity: 0;
+      display: none;
+    }
+  }
+  @keyframes aparecendo {
+    0% {
+      opacity: 0;
+      display: none;
+    }
+    100% {
+      opacity: 1;
+      display: flex;
+    }
+  }
+  .card-imagem {
+    animation: aparecendo 200ms linear forwards;
+  }
+  .card:hover {
+    .card-imagem {
+      animation: desaparecendo 200ms linear forwards;
+    }
+  }
+}
+

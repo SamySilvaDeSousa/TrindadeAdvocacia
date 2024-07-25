@@ -17,14 +17,14 @@
 
 </head>
 
-<body class="flex flex-col overflow-x-hidden relative bg-[url('./src/assets/images/section-bg.png')] bg-cover bg-fixed overflow-y-hidden">
+<body class="flex flex-col overflow-x-hidden relative bg-parallax overflow-y-hidden">
 
   <div id="refresh-page" class="fixed top-0 flex justify-center items-center bg-slate-800 w-screen h-screen z-50">
     <img src="./src/assets/images/logo.png" alt="" class="w-80">
   </div>
 
   <div id="whatsapp-button" class="group/whatsappPing">
-    <div class="fixed bottom-10 right-10 w-[68px] h-[70px] bg-green-500 rounded-full group-hover/whatsappPing:animate-ping z-40"></div>
+    <div class="fixed bottom-10 right-10 w-[67px] h-[69px] bg-green-500 rounded-full group-hover/whatsappPing:animate-ping z-40"></div>
     <a href="index.html" class="fixed bottom-10 right-10 p-3 pb-2 bg-green-500 rounded-full font-semibold border-primary border-green-600 z-40 group/whatsappIcon">
       <ion-icon name="logo-whatsapp" class="text-4xl text-white cursor-pointer"></ion-icon>
     </a>
@@ -43,7 +43,7 @@
       <a id="logo" class="flex justify-center items-center gap-1 xl:gap-5" href="index.html">
         <img src="./src/assets/images/logo.png" alt="Logo" width="80px">
         <div class="flex flex-col">
-          <span class="text-3xl xl:text-4xl text-yellow-500 font-bold">Trindade</span>
+          <span class="text-3xl xl:text-4xl text-yellow-500">Trindade</span>
           <span class="text-lg xl:text-xl ml-2">Advocacia</span>
         </div>
       </a>
@@ -51,10 +51,10 @@
         <button><span class="material-symbols-outlined !text-5xl block xl:!hidden">menu</span></button>
 
         <a href="index.html" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Ínicio</a>
-        <a href="#sobre" class="internal-link hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Sobre</a>
-        <a href="#servicos" class="internal-link hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Serviços</a>
-        <a href="#equipe" class="internal-link hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Nossa Equipe</a>
-        <a href="#contato" class="internal-link hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Contato</a>
+        <a href="#quemsomos" class="internal-link hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Sobre</a>
+        <a href="servicos.html" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Serviços</a>
+        <a href="equipe.html" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Nossa Equipe</a>
+        <a href="#contato" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Contato</a>
       </nav>
 
       <nav id="navbar-mobile" class="internal-link fixed top-[7.5rem] right-0 hidden flex-col justify-center items-center gap-5 bg-[url('./src/assets/images/navbar-bg.png')] bg-cover cursor-pointer w-full z-50">
@@ -80,140 +80,69 @@
     -->
     
     <div class="flex justify-center xl:justify-start items-center w-[1280px] mt-48 mb-20">
-      <h2 class="text-slate-200 text-5xl sm:text-7xl text-start bg-[url('./src/assets/images/section-bg.png')] bg-cover bg-fixed">Quem <br> Somos?</h2>
+      <h2 class="text-slate-200 text-5xl sm:text-7xl text-start bg-parallax">Quem <br> Somos?</h2>
     </div>
 
-    <section id="equipe" class="flex justify-center items-start bg-slate-200 border-yellow-500 w-full py-20 z-20">
-      <div id="equipe-conteudo" class="flex flex-col justify-start items-center xl:items-start gap-20 w-[1280px]">
+    <section id="quemsomos" class="flex flex-col justify-start items-center bg-slate-200 gap-20 w-full py-20 z-20">
+      <div id="quemsomos-conteudo" class="flex flex-col-reverse xl:flex-row justify-center items-center xl:items-start gap-20 w-[1280px]">
 
-        <div id="equipe_container" class="flex flex-col justify-between items-center xl:flex-row gap-20 xl:gap-0 w-full px-5 xl:px-0">
-
-          <div class="relative overflow-hidden flex flex-col justify-center items-center w-full md:w-2/3 xl:w-[600px] bg-[url('./src/assets/images/section-bg.png')] bg-cover bg-fixed">
-            <img src="./src/assets/images/advogada.png" alt="Escritório de Advocacia" class="w-1/2 md:w-72">
-            <img src="./src/assets/images/advogado.png" alt="Escritório de Advocacia" class="absolute bottom-16 -right-20 w-1/2 md:w-96">
-            <img src="./src/assets/images/advogado2.png" alt="Escritório de Advocacia" class="absolute bottom-0 -left-10 w-1/2 md:w-96">
-            <span class="text-xl sm:text-2xl font-semibold text-center text-slate-800 bg-yellow-500 p-5 w-full z-10">OAB/PB - XXX.XXX</span>
-          </div>
-
-          <div class="flex flex-col justify-between items-center xl:items-start gap-10 w-full md:w-2/3 xl:w-[600px]">
-            <div class="flex flex-col justify-start items-center xl:items-start gap-10">
-
-              <h3 class="text-4xl md:text-6xl text-slate-800 font-medium w-full">Nossa História<span class="text-yellow-500">.</span></h3>
-
-              <p class="text-xl md:text-2xl text-slate-800 font-medium w-full text-wrap text-center xl:text-start">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe ut aut amet ratione maiores fuga laudantium eos, itaque quaerat numquam non nam, consequuntur natus tempore perferendis, odit ducimus deleniti?
-              </p>
-              <div class="flex flex-col justify-start items-start gap-5">
-                <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800"><ion-icon name="construct-sharp" class="text-3xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon> Direito Trabalhista</p>
-                <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800"><ion-icon name="cart-sharp" class="text-3xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon> Direito do Consumidor</p>
-              </div>
-            </div>
-            
-            <a href="#contato" class="internal-link bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
-              <p class="text-slate-800 font-semibold text-xl md:text-2xl ml-1">Entrar em Contato</p>
-              <div class="flex justify-center absolute top-0 left-0 bg-slate-800 w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
-              <p class="hidden group-hover/button:block absolute top-3 text-slate-200 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
-            </a>
-          </div>
-
+        <div class="relative overflow-hidden flex flex-col justify-center items-center w-[90%] md:w-2/3 xl:w-[600px] bg-parallax shadow-2xl">
+          <img src="./src/assets/images/advogada.png" alt="Escritório de Advocacia" class="w-1/3 md:w-72">
+          <img src="./src/assets/images/advogado.png" alt="Escritório de Advocacia" class="absolute bottom-8 sm:bottom-16 -right-5 sm:-right-20 w-1/2 md:w-96">
+          <img src="./src/assets/images/advogado2.png" alt="Escritório de Advocacia" class="absolute bottom-0 -left-4 sm:-left-10 w-1/2 md:w-96">
+          <h4 class="text-2xl sm:text-3xl font-semibold text-center text-slate-800 bg-yellow-500 p-2 sm:p-5 w-full z-10">Há mais de 10 anos no mercado!</h4>
         </div>
-
-        <div id="divisoria" class="block xl:hidden w-screen h-20 bg-[url('./src/assets/images/section-bg.png')] bg-cover bg-fixed"></div>
-
-        <div id="equipe_container" class="flex flex-col-reverse xl:flex-row justify-between items-center gap-20 xl:gap-0 w-full px-5 xl:px-0">
-
-          <div class="flex flex-col justify-between items-center xl:items-end gap-10 w-full md:w-2/3 xl:w-[600px]">
-            <div class="flex flex-col justify-start items-center xl:items-end gap-10">
-
-              <div id="advogado-redes" class="flex xl:flex-row flex-row-reverse justify-between items-center gap-5 w-full">
-
-                <a href="https://www.instagram.com/" target="_blank" class="bg-transparent border-primary border-slate-800 border-l-0 relative group">
-                  <ion-icon name="logo-instagram" class="block group-hover:hidden text-2xl md:text-3xl cursor-pointer text-slate-900 p-2 pl-3"></ion-icon>
-                  <div class="absolute top-0 left-0 bg-slate-800 w-1 group-hover:w-full h-full transition-all"></div>
-                  <ion-icon name="logo-instagram" class="hidden group-hover:block text-2xl md:text-3xl cursor-pointer group-hover:text-yellor-500 p-2 pl-3"></ion-icon>
-                </a>
-                <a href="https://www.linkedin.com/" target="_blank" class="bg-transparent border-primary border-slate-800 border-l-0 relative group">
-                  <ion-icon name="logo-linkedin" class="block group-hover:hidden text-2xl md:text-3xl cursor-pointer text-slate-900 p-2 pl-3"></ion-icon>
-                  <div class="absolute top-0 left-0 bg-slate-800 w-1 group-hover:w-full h-full transition-all"></div>
-                  <ion-icon name="logo-linkedin" class="hidden group-hover:block text-2xl md:text-3xl cursor-pointer group-hover:text-yellor-500 p-2 pl-3"></ion-icon>
-                </a>
-
-                <h3 class="text-4xl md:text-6xl text-slate-800 font-medium text-start xl:text-end w-full">Sicrana<span class="text-yellow-500">.</span></h3>
-                
-              </div>
-
-              
-              <p class="text-xl md:text-2xl text-slate-800 font-medium w-full text-wrap text-center xl:text-end">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe ut aut amet ratione maiores fuga laudantium eos, itaque quaerat numquam non nam, consequuntur natus tempore perferendis, odit ducimus deleniti?
-              </p>
-              <div class="flex flex-col justify-start items-end gap-5">
-                <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800">Direito da Família<ion-icon name="heart-sharp" class="text-3xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon></p>
-                <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800">Direito Previdenciário<ion-icon name="people-sharp" class="text-3xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon></p>
-              </div>
-            </div>
-            
-            <a href="#contato" class="internal-link bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
-              <p class="text-slate-800 font-semibold text-xl md:text-2xl ml-1">Entrar em Contato</p>
-              <div class="flex justify-center absolute top-0 left-0 bg-slate-800 w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
-              <p class="hidden group-hover/button:block absolute top-3 text-slate-200 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
-            </a>
+        <div class="flex flex-col justify-between items-center xl:items-start gap-10 w-full px-5 md:px-0 md:w-2/3 xl:w-[600px]">
+          <div class="flex flex-col justify-start items-center xl:items-start gap-10">
+            <h3 class="text-4xl md:text-6xl text-slate-800 font-medium w-full text-center xl:text-start">Nossa História<span class="text-yellow-500">.</span></h3>
+            <p class="text-xl md:text-2xl text-slate-800 font-medium w-full text-wrap text-center xl:text-start">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe ut aut amet ratione maiores fuga laudantium eos, itaque quaerat numquam non nam, consequuntur natus tempore perferendis, odit ducimus deleniti?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis accusantium vitae, doloribus distinctio quos aut quisquam corrupti veniam ducimus esse numquam nihil aspernatur. Cumque recusandae dolores quasi ad illo sed.
+            </p>
+            <p class="text-xl md:text-2xl text-slate-800 font-medium w-full text-wrap text-center xl:text-start">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic alias odit rerum! Maxime vitae molestias atque sunt enim, optio obcaecati amet non quos nemo inventore vero? Porro incidunt officiis quae, itaque quaerat numquam non nam!
+            </p>
           </div>
-
-          <div class="flex flex-col justify-center items-center w-full md:w-2/3 xl:w-[600px] bg-[url('./src/assets/images/section-bg.png')] bg-cover bg-fixed">
-            <img src="./src/assets/images/advogada.png" alt="Escritório de Advocacia" class="w-1/2 md:w-72">
-            <span class="text-xl sm:text-2xl font-semibold text-center text-slate-800 bg-yellow-500 p-5 w-full">OAB/PB - XXX.XXX</span>
-          </div>
-
         </div>
-
-        <div id="divisoria" class="block xl:hidden w-screen h-20 bg-[url('./src/assets/images/section-bg.png')] bg-cover bg-fixed"></div>
-
-        <div id="equipe_container" class="flex flex-col justify-between items-center xl:flex-row gap-20 xl:gap-0 w-full px-5 xl:px-0">
-
-          <div class="flex flex-col justify-center items-center w-full md:w-2/3 xl:w-[600px] bg-[url('./src/assets/images/section-bg.png')] bg-cover bg-fixed" data-aos="fade-right" data-aos-duration="1000">
-            <img src="./src/assets/images/advogado.png" alt="Escritório de Advocacia" class="w-1/2 md:w-[26rem]">
-            <span class="text-xl sm:text-2xl font-semibold text-center text-slate-800 bg-yellow-500 p-5 w-full">OAB/PB - XXX.XXX</span>
-          </div>
-
-          <div class="flex flex-col justify-between items-center xl:items-start gap-10 w-full md:w-2/3 xl:w-[600px]" data-aos="fade-left" data-aos-duration="1000">
-            <div class="flex flex-col justify-start items-center xl:items-start gap-10">
-
-              <div id="advogado-redes" class="flex flex-row justify-between items-center gap-5 w-full">
+      </div>
       
-                <h3 class="text-4xl md:text-6xl text-slate-800 font-medium w-full">Deltrano<span class="text-yellow-500">.</span></h3>
+    </section>
 
-                <a href="https://www.instagram.com/" target="_blank" class="bg-transparent border-primary border-slate-800 border-l-0 relative group">
-                  <ion-icon name="logo-instagram" class="block group-hover:hidden text-2xl md:text-3xl cursor-pointer text-slate-900 p-2 pl-3"></ion-icon>
-                  <div class="absolute top-0 left-0 bg-slate-800 w-1 group-hover:w-full h-full transition-all"></div>
-                  <ion-icon name="logo-instagram" class="hidden group-hover:block text-2xl md:text-3xl cursor-pointer group-hover:text-yellor-500 p-2 pl-3"></ion-icon>
-                </a>
-                <a href="https://www.linkedin.com/" target="_blank" class="bg-transparent border-primary border-slate-800 border-l-0 relative group">
-                  <ion-icon name="logo-linkedin" class="block group-hover:hidden text-2xl md:text-3xl cursor-pointer text-slate-900 p-2 pl-3"></ion-icon>
-                  <div class="absolute top-0 left-0 bg-slate-800 w-1 group-hover:w-full h-full transition-all"></div>
-                  <ion-icon name="logo-linkedin" class="hidden group-hover:block text-2xl md:text-3xl cursor-pointer group-hover:text-yellor-500 p-2 pl-3"></ion-icon>
-                </a>
-                
-              </div>
-
-              
-              <p class="text-xl md:text-2xl text-slate-800 font-medium w-full text-wrap text-center xl:text-start">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe ut aut amet ratione maiores fuga laudantium eos, itaque quaerat numquam non nam, consequuntur natus tempore perferendis, odit ducimus deleniti?
-              </p>
-              <div class="flex flex-col justify-start items-start gap-5">
-                <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800"><ion-icon name="stats-chart-sharp" class="text-3xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon> Direito Empresarial</p>
-                <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800"><ion-icon name="home-sharp" class="text-3xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon> Direito Imobiliário</p>
-              </div>
-            </div>
-            
-            <a href="#contato" class="internal-link bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
-              <p class="text-slate-800 font-semibold text-xl md:text-2xl ml-1">Entrar em Contato</p>
-              <div class="flex justify-center absolute top-0 left-0 bg-slate-800 w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
-              <p class="hidden group-hover/button:block absolute top-3 text-slate-200 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
-            </a>
-          </div>
-
+    <section id="principios" class="flex flex-col justify-start items-center gap-20 bg-parallax w-full py-20 z-20">
+      <h3 class="text-4xl md:text-6xl text-slate-200 font-medium w-full text-center">Nossos Princípios<span class="text-yellow-500">.</span></h3>
+      <div id="principios-conteudo" class="flex flex-col xl:flex-row justify-center items-center xl:items-start gap-28 xl:gap-10 max-w-[1280px] mt-12">
+        <!--CARDS-->
+        <div class="card flex flex-col justify-start items-center text-slate-800 bg-slate-200 w-[370px] sm:w-[400px] relative self-stretch shadow-2xl group">
+          <ion-icon name="body-sharp" class="absolute -top-[2.5rem] md:-top-14 !text-5xl md:!text-7xl text-slate-800 group-hover:text-slate-200 transition-all duration-200 bg-yellow-500 self-center rounded-full p-5 z-10"></ion-icon>
+          <div class="absolute top-0 bg-yellow-500 w-full h-14"></div>
+          <h3 class="text-2xl md:text-3xl font-semibold text-slate-900 p-5 w-full mt-14 text-center">Dedicação ao Cliente</h3>
+          <p class="text-slate-800 text-xl md:text-2xl font-semibold p-5 text-center">Oferecemos um atendimento personalizado, compreendendo profundamente as necessidades de cada cliente e garantindo suporte humanizado para alcançar os melhores resultados.</p>
+          <div class="card-imagem hidden xl:block absolute bottom-0 h-[376px] w-full bg-[url('./src/assets/images/cliente.jpg')] bg-cover"></div>
         </div>
 
+        <div class="card flex flex-col justify-start items-center text-slate-800 bg-slate-200 w-[370px] sm:w-[400px] relative self-stretch shadow-2xl group">
+          <ion-icon name="shield-sharp" class="absolute -top-[2.5rem] md:-top-14 !text-5xl md:!text-7xl text-slate-800 group-hover:text-slate-200 transition-all duration-200 bg-yellow-500 self-center rounded-full p-5 z-10"></ion-icon>
+          <div class="absolute top-0 bg-yellow-500 w-full h-14"></div>
+          <h3 class="text-2xl md:text-3xl font-semibold text-slate-900 p-5 w-full mt-14 text-center">Transparência e Confiança</h3>
+          <p class="text-slate-800 text-xl md:text-2xl font-semibold p-5 text-center">Valorizamos a transparência, mantendo um relacionamento aberto e honesto com nossos clientes, assegurando clareza em procedimentos, custos e resultados esperados.</p>
+          <div class="card-imagem hidden xl:block absolute bottom-0 h-[376px] w-full bg-[url('./src/assets/images/confianca.jpg')] bg-cover bg-center"></div>
+        </div>
+
+        <div class="card flex flex-col justify-start items-center text-slate-800 bg-slate-200 w-[370px] sm:w-[400px] relative self-stretch shadow-2xl group">
+          <ion-icon name="star-sharp" class="absolute -top-[2.5rem] md:-top-14 !text-5xl md:!text-7xl text-slate-800 group-hover:text-slate-200 transition-all duration-200 bg-yellow-500 self-center rounded-full p-5 z-10"></ion-icon>
+          <div class="absolute top-0 bg-yellow-500 w-full h-14"></div>
+          <h3 class="text-2xl md:text-3xl font-semibold text-slate-900 p-5 w-full mt-14 text-center">Compromisso com a Excelência</h3>
+          <p class="text-slate-800 text-xl md:text-2xl font-semibold p-5 text-center">Dedicamos-nos a oferecer serviços jurídicos de alta qualidade, buscando sempre as melhores soluções para nossos clientes com profissionalismo e atualização constante.</p>
+          <div class="card-imagem hidden xl:block absolute bottom-0 h-[376px] w-full bg-[url('./src/assets/images/excelencia.jpg')] bg-cover bg-center"></div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="flex flex-col justify-center items-center bg-slate-200 gap-20 w-full py-20 z-20">
+      <div class="flex flex-col justify-center items-center gap-20 w-[1280px]">
+        <h3 class="text-4xl md:text-6xl text-slate-800 font-medium w-full text-center">Nosso Escritório<span class="text-yellow-500">.</span></h3>
+        <img src="./src/assets/images/escritorio.jpg" alt="Escritório de Advocacia" class="relative overflow-hidden flex flex-col justify-center items-center w-[80%] bg-[url('./src/assets/images/escritorio.jpg')] bg-cover bg-fixed object-cover shadow-2xl">
       </div>
     </section>
 

@@ -4,3 +4,17 @@ h2 {
   font-family: "Playfair Display", serif !important;
   font-weight: 700 !important;
 }
+
+h2 {
+  position: relative;
+}
+h2::before {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  background-color: #eab308;
+}
