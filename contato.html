@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth overflow-x-hidden">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Samy Silva de Sousa">
+  <meta name="description" content="Site Institucional - Advocacia">
+  <meta name="keywords" content="">
+  <meta property="og:image" content="./src/assets/images/logo.png">
+  <title>Trindade Advocacia - Quem Somos</title>
+  <link rel="icon" href="./src/assets/images/logo.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="./src/css/main.css"> <!--CSS-->
+  <script src="https://cdn.tailwindcss.com"></script> <!--TAILWIND - CDN-->
+
+</head>
+
+<body class="flex flex-col overflow-x-hidden relative bg-parallax overflow-y-hidden">
+
+  <div id="refresh-page" class="fixed top-0 flex justify-center items-center bg-parallax w-screen h-screen z-50">
+    <img src="./src/assets/images/logo.png" alt="" class="w-80 animate-ping">
+  </div>
+
+  <div id="whatsapp-button" class="group/whatsappPing">
+    <div class="fixed bottom-10 right-10 w-[67px] h-[69px] bg-green-500 rounded-full group-hover/whatsappPing:animate-ping z-40"></div>
+    <a href="index.html" class="fixed bottom-10 right-10 p-3 pb-2 bg-green-500 rounded-full font-semibold border-primary border-green-600 z-40 group/whatsappIcon">
+      <ion-icon name="logo-whatsapp" class="text-4xl text-white cursor-pointer"></ion-icon>
+    </a>
+  </div>
+
+  <!--
+  ██   ██ ███████  █████  ██████  ███████ ██████  
+  ██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+  ███████ █████   ███████ ██   ██ █████   ██████  
+  ██   ██ ██      ██   ██ ██   ██ ██      ██   ██ 
+  ██   ██ ███████ ██   ██ ██████  ███████ ██   ██ 
+  -->
+
+  <header class="flex flex-col justify-center items-center fixed w-full bg-[url('./src/assets/images/navbar-bg.png')] bg-cover bg-fixed border-yellow-500 z-40">
+    <div class="flex justify-between items-center gap-5 py-5 px-5 xl:px-0 w-full xl:w-[1280px]">
+      <a id="logo" class="flex justify-center items-center gap-1 xl:gap-5" href="index.html">
+        <img src="./src/assets/images/logo.png" alt="Logo" width="80px">
+        <div class="flex flex-col">
+          <span class="text-3xl xl:text-4xl text-yellow-500">Trindade</span>
+          <span class="text-lg xl:text-xl ml-2">Advocacia</span>
+        </div>
+      </a>
+      <nav id="navbar-desktop" class="flex justify-center items-center gap-5 cursor-pointer z-50">
+        <button><span class="material-symbols-outlined !text-5xl block xl:!hidden">menu</span></button>
+
+        <a href="index.html" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Ínicio</a>
+        <a href="equipe.html" class="internal-link hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Sobre</a>
+        <a href="servicos.html" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Serviços</a>
+        <a href="equipe.html" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Nossa Equipe</a>
+        <a href="#contato" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Contato</a>
+      </nav>
+
+      <nav id="navbar-mobile" class="internal-link fixed top-[7.5rem] right-0 hidden flex-col justify-center items-center gap-5 bg-[url('./src/assets/images/navbar-bg.png')] bg-cover cursor-pointer w-full z-50">
+        <a href="#inicio" class="internal-link block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Ínicio</a>
+        <a href="#sobre" class="internal-link block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Sobre</a>
+        <a href="#servicos" class="internal-link block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Serviços</a>
+        <a href="#equipe" class="internal-link block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Nossa Equipe</a>
+        <a href="#contato" class="internal-link block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Contato</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="flex flex-col justify-center items-center">
+
+    <!--
+     ██████  ██████  ███    ██ ████████  █████  ████████  ██████  
+    ██      ██    ██ ████   ██    ██    ██   ██    ██    ██    ██ 
+    ██      ██    ██ ██ ██  ██    ██    ███████    ██    ██    ██ 
+    ██      ██    ██ ██  ██ ██    ██    ██   ██    ██    ██    ██ 
+     ██████  ██████  ██   ████    ██    ██   ██    ██     ██████  
+    -->
+
+    <div class="flex justify-center xl:justify-start items-center w-[1280px] mt-48 mb-20">
+      <h2 class="text-slate-200 text-5xl sm:text-7xl text-start bg-parallax">Fale <br> Conosco</h2>
+    </div>
+
+    <section id="contato" class="relative flex justify-center items-start bg-slate-200 w-full py-20 pb-32 z-20">
+      <div id="contato-conteudo" class="flex flex-col justify-start items-center xl:items-start gap-20 w-full xl:w-[1280px]">
+
+        <div id="contato_container" class="relative flex flex-col xl:flex-row justify-between items-center xl:items-start w-full xl:w-[1280px]">
+          <div id="contato-texto_container" class="flex flex-col items-center xl:items-start gap-20 px-5 sm:px-0">
+            <p class="text-xl md:text-2xl text-slate-800 font-medium max-w-[640px] text-center xl:text-start">
+              Entre em contato com a nossa equipe de advogados preenchendo o formulário com todas as informações ou através das redes sociais. <br><br>
+              Temos <strong class="text-slate-900 font-bold">atendimento 24 horas</strong>!
+            </p>
+
+            <div id="contato-redes" class="flex flex-row justify-start items-center gap-5">
+       
+              <a href="https://www.whatsapp.com/" target="_blank" class="bg-transparent border-secondary border-l-0 relative group">
+                <ion-icon name="logo-whatsapp" class="block group-hover:hidden text-3xl cursor-pointer text-slate-800 p-2 pl-3"></ion-icon>
+                <div class="absolute top-0 left-0 bg-parallax w-1 group-hover:w-full h-full transition-all"></div>
+                <ion-icon name="logo-whatsapp" class="hidden group-hover:block text-3xl cursor-pointer group-hover:text-yellow-500 p-2 pl-3"></ion-icon>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank" class="bg-transparent border-secondary border-l-0 relative group">
+                <ion-icon name="logo-instagram" class="block group-hover:hidden text-3xl cursor-pointer text-slate-800 p-2 pl-3"></ion-icon>
+                <div class="absolute top-0 left-0 bg-parallax w-1 group-hover:w-full h-full transition-all"></div>
+                <ion-icon name="logo-instagram" class="hidden group-hover:block text-3xl cursor-pointer group-hover:text-yellow-500 p-2 pl-3"></ion-icon>
+              </a>
+              <a href="https://www.facebook.com/" target="_blank" class="bg-transparent border-secondary border-l-0 relative group">
+                <ion-icon name="logo-facebook" class="block group-hover:hidden text-3xl cursor-pointer text-slate-800 p-2 pl-3"></ion-icon>
+                <div class="absolute top-0 left-0 bg-parallax w-1 group-hover:w-full h-full transition-all"></div>
+                <ion-icon name="logo-facebook" class="hidden group-hover:block text-3xl cursor-pointer group-hover:text-yellow-500 p-2 pl-3"></ion-icon>
+              </a>
+            </div>
+
+            <div class="flex flex-col justify-center gap-10">
+                            
+              <div class="flex flex-col">
+                <div class="flex max-xl:flex-col items-center gap-5">
+                  <ion-icon name="mail" class="text-4xl text-yellow-500 bg-parallax p-2 rounded-full"></ion-icon>
+                  <p class="text-xl md:text-2xl text-slate-800 font-semibold">Email</p>
+                </div>
+                <p class="xl:ml-[4.5rem] text-lg md:text-xl text-slate-600 text-wrap max-xl:text-center">trindadeadvocacia@loremipsum.com</p>
+              </div>
+              <div class="flex flex-col">
+                <div class="flex max-xl:flex-col items-center gap-5">
+                  <ion-icon name="call" class="text-4xl text-yellow-500 bg-parallax p-2 rounded-full"></ion-icon>
+                  <p class="text-xl md:text-2xl text-slate-800 font-semibold">Telefone</p>
+                </div>
+                <p class="xl:ml-[4.5rem] text-lg md:text-xl text-slate-600 text-wrap max-xl:text-center">+99 (99) 99999 - 9999</p>
+              </div>
+              <div class="flex flex-col">
+                <div class="flex max-xl:flex-col items-center gap-5">
+                  <ion-icon name="location" class="text-4xl text-yellow-500 bg-parallax p-2 rounded-full"></ion-icon>
+                  <p class="text-xl md:text-2xl text-slate-800 font-semibold">Localização</p>
+                </div>
+                <p class="xl:ml-[4.5rem] text-lg md:text-xl text-slate-600 text-wrap max-xl:text-center">Av. Lorem Ipsum - Lorem, Ipsum, 99999-99</p>
+              </div>
+
+            </div>
+
+          </div>
+          
+          <div class="flex flex-col w-full md:w-2/3 xl:max-w-[600px] max-xl:mt-20">
+            <div class="flex justify-center items-center bg-yellow-500 p-4">
+              <h3 class="text-2xl sm:text-3xl font-semibold text-center text-slate-800 bg-yellow-500">Formulário de Contato</h3>
+            </div>
+            <form id="contato-form" class="flex flex-col gap-10 bg-parallax w-full p-10 shadow-2xl">
+              <div class="flex max-sm:flex-col gap-10">
+                <div id="input-item_nome" class="flex flex-col gap-2 w-full">
+                  <label for="nome" class="text-yellow-500 text-xl md:text-2xl font-medium text-center md:text-start">Nome</label>
+                  <input type="text" id="nome" name="nome" placeholder="Seu nome" required class="truncate w-full h-14 text-slate-800 font-medium text-lg md:text-xl bg-slate-200 border-b-[5px] border-yellow-500 p-2 resize-none cursor-text outline-none caret-slate-800">
+                </div>
+                <div id="input-item_nome" class="flex flex-col gap-2 w-full">
+                  <label for="telefone" class="text-yellow-500 text-xl md:text-2xl font-medium text-center md:text-start">Telefone</label>
+                  <input type="text" id="telefone" name="telefone" placeholder="Seu telefone" required class="truncate w-full h-14 text-slate-800 font-medium text-lg md:text-xl bg-slate-200 border-b-[5px] border-yellow-500 p-2 resize-none cursor-text outline-none caret-slate-800">
+                </div>
+              </div>
+              <div id="input-item_email" class="flex flex-col gap-2 w-full">
+                <label for="email" class="text-yellow-500 text-xl md:text-2xl font-medium text-center md:text-start">Email</label>
+                <input type="email" id="email" name="email" placeholder="Seu email principal" required class="truncate w-full h-14 text-slate-800 font-medium text-lg md:text-xl bg-slate-200 border-b-[5px] border-yellow-500 p-2 resize-none cursor-text outline-none caret-slate-800">
+              </div>
+              <div id="input-item_assunto" class="flex flex-col gap-2 w-full">
+                <label for="assunto" class="text-yellow-500 text-xl md:text-2xl font-medium text-center md:text-start">Assunto</label>
+                <input type="text" id="assunto" name="assunto" placeholder="Do que se trata?" required class="truncate w-full h-14 text-slate-800 font-medium text-lg md:text-xl bg-slate-200 border-b-[5px] border-yellow-500 p-2 resize-none cursor-text outline-none caret-slate-800">
+              </div>
+              <div id="input-item_mensagem" class="flex flex-col gap-2 w-full relative">
+                <label for="mensagem" class="text-yellow-500 text-xl md:text-2xl font-medium text-center md:text-start">Sua Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Do que precisa?" lang="pt-br" class="!hyphens-auto form-input w-full text-slate-800 font-medium text-lg md:text-xl bg-slate-200 border-b-[5px] border-yellow-500 p-2 !pr-1 resize-none cursor-text outline-none caret-slate-800 overflow-x-hidden relative" rows="10" required></textarea>
+              </div>
+              <button type="submit" class="flex justify-center items-center bg-transparent border-primary border-l-0 py-3 px-7 relative group">
+                <p class="text-yellow-500 font-medium text-xl md:text-2xl ml-1">Enviar</p>
+                <div class="flex justify-center absolute top-0 left-0 bg-yellow-500 w-1 group-hover:w-full h-full transition-all overflow-hidden"></div>
+                <p class="hidden group-hover:block absolute top-3 text-slate-900 font-semibold text-2xl ml-[3px]">Enviar</p>
+              </button>
+              </div>
+            </form>
+          </div>
+          
+
+          <div id="map" class="relative w-full h-[18.75rem] px-5 mt-[84px]">
+            <h3 class="absolute -top-[74px] sm:-top-[74px] right-5 left-5 text-2xl sm:text-3xl font-semibold text-center text-yellow-500 bg-parallax border-b-4 border-yellow-500 p-4">Nossa Localização</h3>
+            <iframe class="bg-slate-200 w-full h-full shadow-2xl" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7918.130556860588!2d-34.860188!3d-7.118434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd515ec18f43%3A0x6d14bf1ce44d91da!2sUNINASSAU%20-%20Jo%C3%A3o%20Pessoa!5e0!3m2!1spt-BR!2sbr!4v1700878551194!5m2!1spt-BR!2sbr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="back-to-top" class="flex justify-center items-center absolute -bottom-7 left-0 right-0">
+        <a href="#contato" class="flex justify-center items-center internal-link bg-slate-800 hover:bg-yellow-500 border-primary py-[0.625rem] px-3 rounded-full group shadow-2xl">
+          <span class="material-symbols-outlined !text-4xl text-yellow-500 group-hover:text-slate-900">arrow_upward</span>
+        </a>
+      </div>
+      
+    </section>
+
+  </main>
+
+  <!--
+  ███████  ██████   ██████  ████████ ███████ ██████  
+  ██      ██    ██ ██    ██    ██    ██      ██   ██ 
+  █████   ██    ██ ██    ██    ██    █████   ██████  
+  ██      ██    ██ ██    ██    ██    ██      ██   ██ 
+  ██       ██████   ██████     ██    ███████ ██   ██ 
+  -->
+
+  <footer class="flex flex-col xl:flex-row justify-center items-center bg-parallax w-full gap-5 xl:gap-10 p-4 pt-16">
+    <img src="./src/assets/images/logo.png" alt="Logo" class="w-20 bg-slate-200 p-2 rounded-full">
+    <p class="flex flex-col xl:flex-row  justify-center items-center gap-10 text-yellow-500 text-2xl text-center font-semibold">
+      2024 &copy; Desenvolvido por Samy Silva de Sousa
+      <a href="https://github.com/SamySilvaDeSousa" target="_blank" class="flex justify-center items-center">
+        <ion-icon name="logo-github" class="text-slate-200 !text-4xl hover:text-yellow-500"></ion-icon>
+      </a>
+    </p>
+  </footer>
+
+  <!--
+  ███████  ██████ ██████  ██ ██████  ████████ 
+  ██      ██      ██   ██ ██ ██   ██    ██    
+  ███████ ██      ██████  ██ ██████     ██    
+       ██ ██      ██   ██ ██ ██         ██    
+  ███████  ██████ ██   ██ ██ ██         ██   
+  -->
+
+  <script src="./src/js/navbar.js"></script>
+
+  <!--ÍCONES-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"/>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <!--ÍCONES-->
+  
+  <noscript>
+    <div class="noscript">
+      <div class="noscript-container">
+        <h3 class="h3" style="transform: translateY(80px)">Ative o JavaScript!</h3>
+        <img src="./src/assets/images/Noscript.gif">
+      </div>
+    </div>
+  </noscript>
+
+</body>
+
+</html>

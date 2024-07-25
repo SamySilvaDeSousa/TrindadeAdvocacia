@@ -14,6 +14,14 @@
   background-size: cover !important;
   background-attachment: fixed !important;
 }
+.bg-parallax-dark {
+  background-image: url('../../assets/images/navbar-bg.png') !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+}
 .bg-slate-transparent {
   background-color: #0f172abf;
+}
+.bg-overlay {
+  background-color: #0f172a5d;
 }

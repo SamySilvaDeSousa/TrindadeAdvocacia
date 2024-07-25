@@ -79,3 +79,17 @@
   }
 }
 
+#menu-hamburger.open {
+  transform: translateX(10px);
+}
+#menu-hamburger.open > #span1 {
+  transform-origin: 0% 0%;
+  transform: rotate(45deg);
+}
+#menu-hamburger.open > #span2 {
+  opacity: 0  ;
+}
+#menu-hamburger.open > #span3 {
+  transform-origin: 0% 100%;
+  transform: rotate(-45deg);
+}

@@ -19,8 +19,8 @@
 
 <body class="flex flex-col overflow-x-hidden relative bg-parallax overflow-y-hidden">
 
-  <div id="refresh-page" class="fixed top-0 flex justify-center items-center bg-slate-800 w-screen h-screen z-50">
-    <img src="./src/assets/images/logo.png" alt="" class="w-80">
+  <div id="refresh-page" class="fixed top-0 flex justify-center items-center bg-parallax w-screen h-screen z-50">
+    <img src="./src/assets/images/logo.png" alt="" class="w-80 animate-ping">
   </div>
 
   <div id="whatsapp-button" class="group/whatsappPing">
@@ -54,15 +54,15 @@
         <a href="sobre.html" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Sobre</a>
         <a href="#servicos" class="internal-link hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Serviços</a>
         <a href="equipe.html" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Nossa Equipe</a>
-        <a href="#contato" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Contato</a>
+        <a href="contato.html" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Contato</a>
       </nav>
 
-      <nav id="navbar-mobile" class="internal-link fixed top-[7.5rem] right-0 hidden flex-col justify-center items-center gap-5 bg-[url('./src/assets/images/navbar-bg.png')] bg-cover cursor-pointer w-full z-50">
-        <a href="#inicio" class="internal-link block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Ínicio</a>
-        <a href="#sobre" class="internal-link block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Sobre</a>
+      <nav id="navbar-mobile" class="fixed top-[7.5rem] right-0 hidden flex-col justify-center items-center gap-5 bg-[url('./src/assets/images/navbar-bg.png')] bg-cover cursor-pointer w-full z-50">
+        <a href="index.html" class="block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Ínicio</a>
+        <a href="sobre.html" class="block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Sobre</a>
         <a href="#servicos" class="internal-link block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Serviços</a>
-        <a href="#equipe" class="internal-link block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Nossa Equipe</a>
-        <a href="#contato" class="internal-link block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Contato</a>
+        <a href="equipe.html" class="block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Nossa Equipe</a>
+        <a href="contato.html" class="block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Contato</a>
       </nav>
 
     </div>
@@ -88,25 +88,25 @@
 
         <div id="servicos_container" class="flex flex-col justify-between items-center xl:flex-row gap-20 xl:gap-0 w-full px-5 xl:px-0">
 
-          <div id="servicos-imagem" class="flex flex-col justify-center items-center w-full md:w-2/3 xl:w-[600px] h-[350px] xl:h-[500px] bg-[url('./src/assets/images/direito-do-trabalho.webp')] bg-cover relative shadow-2xl">
-            <ion-icon name="construct-sharp" class="absolute -top-14 !text-7xl text-yellow-500 bg-parallax p-5 rounded-full z-10"></ion-icon>
+          <div id="servicos-imagem" class="flex flex-col justify-center items-center w-full md:w-2/3 xl:w-[600px] h-[400px] md:h-[500px] bg-[url('./src/assets/images/direito-do-trabalho.webp')] bg-cover bg-center relative shadow-2xl">
+            <ion-icon name="construct-sharp" class="absolute -top-10 sm:-top-12 md:-top-14 text-5xl sm:text-6xl md:text-7xl text-yellow-500 bg-parallax p-5 rounded-full z-10"></ion-icon>
             <div class="absolute top-0 bg-parallax border-b-4 border-yellow-500 h-16 w-full"></div>
           </div>
 
           <div class="flex flex-col justify-between items-center xl:items-start gap-10 w-full md:w-2/3 xl:w-[600px]">
             <div class="flex flex-col justify-start items-center xl:items-start gap-10">
 
-              <h3 class="text-4xl md:text-5xl text-slate-800 font-medium w-full">Direito Trabalhista<span class="text-yellow-500">.</span></h3>
+              <h3 class="text-4xl md:text-5xl text-slate-800 font-medium text-center xl:text-start w-full">Direito Trabalhista<span class="text-yellow-500">.</span></h3>
 
               <p class="text-xl md:text-2xl text-slate-800 font-medium w-full text-wrap text-center xl:text-start">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe ut aut amet ratione maiores fuga laudantium eos, itaque quaerat numquam non nam, consequuntur natus tempore perferendis, odit ducimus deleniti?
               </p>
             </div>
             
-            <a href="#contato" class="internal-link bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
+            <a href="contato.html" class="bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
               <p class="text-slate-800 font-semibold text-xl md:text-2xl ml-1">Entrar em Contato</p>
-              <div class="flex justify-center absolute top-0 left-0 bg-slate-800 w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
-              <p class="hidden group-hover/button:block absolute top-3 text-slate-200 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
+              <div class="flex justify-center absolute top-0 left-0 bg-parallax w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
+              <p class="hidden group-hover/button:block absolute top-3 text-yellow-500 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
             </a>
           </div>
 
@@ -114,27 +114,27 @@
 
         <div id="divisoria" class="block xl:hidden w-screen h-20 bg-parallax"></div>
 
-        <div id="servicos_container" class="flex flex-col justify-between items-center xl:flex-row gap-20 xl:gap-0 w-full px-5 xl:px-0">
+        <div id="servicos_container" class="flex flex-col-reverse justify-between items-center xl:flex-row gap-20 xl:gap-0 w-full px-5 xl:px-0">
 
           <div class="flex flex-col justify-between items-center xl:items-end gap-10 w-full md:w-2/3 xl:w-[600px]">
             <div class="flex flex-col justify-start items-center xl:items-end gap-10">
 
-              <h3 class="text-4xl md:text-5xl text-slate-800 font-medium w-full text-end">Direito do Consumidor<span class="text-yellow-500">.</span></h3>
+              <h3 class="text-4xl md:text-5xl text-slate-800 font-medium w-full text-center xl:text-end">Direito do Consumidor<span class="text-yellow-500">.</span></h3>
 
               <p class="text-xl md:text-2xl text-slate-800 font-medium w-full text-wrap text-center xl:text-end">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe ut aut amet ratione maiores fuga laudantium eos, itaque quaerat numquam non nam, consequuntur natus tempore perferendis, odit ducimus deleniti?
               </p>
             </div>
             
-            <a href="#contato" class="internal-link bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
+            <a href="contato.html" class="bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
               <p class="text-slate-800 font-semibold text-xl md:text-2xl ml-1">Entrar em Contato</p>
-              <div class="flex justify-center absolute top-0 left-0 bg-slate-800 w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
-              <p class="hidden group-hover/button:block absolute top-3 text-slate-200 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
+              <div class="flex justify-center absolute top-0 left-0 bg-parallax w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
+              <p class="hidden group-hover/button:block absolute top-3 text-yellow-500 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
             </a>
           </div>
 
-          <div id="servicos-imagem" class="flex flex-col justify-center items-center w-full md:w-2/3 xl:w-[600px] h-[350px] xl:h-[500px] bg-[url('./src/assets/images/direito-do-consumidor.webp')] bg-cover relative shadow-2xl">
-            <ion-icon name="cart-sharp" class="absolute -top-14 !text-7xl text-yellow-500 bg-parallax p-5 rounded-full z-10"></ion-icon>
+          <div id="servicos-imagem" class="flex flex-col justify-center items-center w-full md:w-2/3 xl:w-[600px] h-[400px] md:h-[500px] bg-[url('./src/assets/images/direito-do-consumidor.webp')] bg-cover relative shadow-2xl">
+            <ion-icon name="cart-sharp" class="absolute -top-10 sm:-top-12 md:-top-14 text-5xl sm:text-6xl md:text-7xl text-yellow-500 bg-parallax p-5 rounded-full z-10"></ion-icon>
             <div class="absolute top-0 bg-parallax border-b-4 border-yellow-500 h-16 w-full"></div>
           </div>
 
@@ -144,25 +144,25 @@
 
         <div id="servicos_container" class="flex flex-col justify-between items-center xl:flex-row gap-20 xl:gap-0 w-full px-5 xl:px-0">
 
-          <div id="servicos-imagem" class="flex flex-col justify-center items-center w-full md:w-2/3 xl:w-[600px] h-[350px] xl:h-[500px] bg-[url('./src/assets/images/direito-da-familia.webp')] bg-cover relative shadow-2xl">
-            <ion-icon name="heart-sharp" class="absolute -top-14 !text-7xl text-yellow-500 bg-parallax p-5 rounded-full z-10"></ion-icon>
+          <div id="servicos-imagem" class="flex flex-col justify-center items-center w-full md:w-2/3 xl:w-[600px] h-[400px] md:h-[500px] bg-[url('./src/assets/images/direito-da-familia.webp')] bg-cover relative shadow-2xl">
+            <ion-icon name="heart-sharp" class="absolute -top-10 sm:-top-12 md:-top-14 text-5xl sm:text-6xl md:text-7xl text-yellow-500 bg-parallax p-5 rounded-full z-10"></ion-icon>
             <div class="absolute top-0 bg-parallax border-b-4 border-yellow-500 h-16 w-full"></div>
           </div>
 
           <div class="flex flex-col justify-between items-center xl:items-start gap-10 w-full md:w-2/3 xl:w-[600px]">
             <div class="flex flex-col justify-start items-center xl:items-start gap-10">
 
-              <h3 class="text-4xl md:text-5xl text-slate-800 font-medium w-full">Direito da Família<span class="text-yellow-500">.</span></h3>
+              <h3 class="text-4xl md:text-5xl text-slate-800 font-medium text-center xl:text-start w-full">Direito da Família<span class="text-yellow-500">.</span></h3>
 
               <p class="text-xl md:text-2xl text-slate-800 font-medium w-full text-wrap text-center xl:text-start">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe ut aut amet ratione maiores fuga laudantium eos, itaque quaerat numquam non nam, consequuntur natus tempore perferendis, odit ducimus deleniti?
               </p>
             </div>
             
-            <a href="#contato" class="internal-link bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
+            <a href="contato.html" class="bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
               <p class="text-slate-800 font-semibold text-xl md:text-2xl ml-1">Entrar em Contato</p>
-              <div class="flex justify-center absolute top-0 left-0 bg-slate-800 w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
-              <p class="hidden group-hover/button:block absolute top-3 text-slate-200 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
+              <div class="flex justify-center absolute top-0 left-0 bg-parallax w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
+              <p class="hidden group-hover/button:block absolute top-3 text-yellow-500 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
             </a>
           </div>
 
@@ -170,27 +170,27 @@
 
         <div id="divisoria" class="block xl:hidden w-screen h-20 bg-parallax"></div>
 
-        <div id="servicos_container" class="flex flex-col justify-between items-center xl:flex-row gap-20 xl:gap-0 w-full px-5 xl:px-0">
+        <div id="servicos_container" class="flex flex-col-reverse justify-between items-center xl:flex-row gap-20 xl:gap-0 w-full px-5 xl:px-0">
 
           <div class="flex flex-col justify-between items-center xl:items-end gap-10 w-full md:w-2/3 xl:w-[600px]">
             <div class="flex flex-col justify-start items-center xl:items-end gap-10">
 
-              <h3 class="text-4xl md:text-5xl text-slate-800 font-medium w-full text-end">Direito Previdenciário<span class="text-yellow-500">.</span></h3>
+              <h3 class="text-4xl md:text-5xl text-slate-800 font-medium w-full text-center xl:text-end">Direito Previdenciário<span class="text-yellow-500">.</span></h3>
 
               <p class="text-xl md:text-2xl text-slate-800 font-medium w-full text-wrap text-center xl:text-end">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe ut aut amet ratione maiores fuga laudantium eos, itaque quaerat numquam non nam, consequuntur natus tempore perferendis, odit ducimus deleniti?
               </p>
             </div>
             
-            <a href="#contato" class="internal-link bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
+            <a href="contato.html" class="bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
               <p class="text-slate-800 font-semibold text-xl md:text-2xl ml-1">Entrar em Contato</p>
-              <div class="flex justify-center absolute top-0 left-0 bg-slate-800 w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
-              <p class="hidden group-hover/button:block absolute top-3 text-slate-200 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
+              <div class="flex justify-center absolute top-0 left-0 bg-parallax w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
+              <p class="hidden group-hover/button:block absolute top-3 text-yellow-500 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
             </a>
           </div>
 
-          <div id="servicos-imagem" class="flex flex-col justify-center items-center w-full md:w-2/3 xl:w-[600px] h-[350px] xl:h-[500px] bg-[url('./src/assets/images/direito-previdenciario.webp')] bg-cover relative shadow-2xl">
-            <ion-icon name="people-sharp" class="absolute -top-14 !text-7xl text-yellow-500 bg-parallax p-5 rounded-full z-10"></ion-icon>
+          <div id="servicos-imagem" class="flex flex-col justify-center items-center w-full md:w-2/3 xl:w-[600px] h-[400px] md:h-[500px] bg-[url('./src/assets/images/direito-previdenciario.webp')] bg-cover relative shadow-2xl">
+            <ion-icon name="people-sharp" class="absolute -top-10 sm:-top-12 md:-top-14 text-5xl sm:text-6xl md:text-7xl text-yellow-500 bg-parallax p-5 rounded-full z-10"></ion-icon>
             <div class="absolute top-0 bg-parallax border-b-4 border-yellow-500 h-16 w-full"></div>
           </div>
 
@@ -200,25 +200,25 @@
 
         <div id="servicos_container" class="flex flex-col justify-between items-center xl:flex-row gap-20 xl:gap-0 w-full px-5 xl:px-0">
 
-          <div id="servicos-imagem" class="flex flex-col justify-center items-center w-full md:w-2/3 xl:w-[600px] h-[350px] xl:h-[500px] bg-[url('./src/assets/images/direito-empresarial.webp')] bg-cover relative shadow-2xl">
-            <ion-icon name="stats-chart-sharp" class="absolute -top-14 !text-7xl text-yellow-500 bg-parallax p-5 rounded-full z-10"></ion-icon>
+          <div id="servicos-imagem" class="flex flex-col justify-center items-center w-full md:w-2/3 xl:w-[600px] h-[400px] md:h-[500px] bg-[url('./src/assets/images/direito-empresarial.webp')] bg-cover relative shadow-2xl">
+            <ion-icon name="stats-chart-sharp" class="absolute -top-10 sm:-top-12 md:-top-14 text-5xl sm:text-6xl md:text-7xl text-yellow-500 bg-parallax p-5 rounded-full z-10"></ion-icon>
             <div class="absolute top-0 bg-parallax border-b-4 border-yellow-500 h-16 w-full"></div>
           </div>
 
           <div class="flex flex-col justify-between items-center xl:items-start gap-10 w-full md:w-2/3 xl:w-[600px]">
             <div class="flex flex-col justify-start items-center xl:items-start gap-10">
 
-              <h3 class="text-4xl md:text-5xl text-slate-800 font-medium w-full">Direito Empresarial<span class="text-yellow-500">.</span></h3>
+              <h3 class="text-4xl md:text-5xl text-slate-800 font-medium text-center xl:text-start w-full">Direito Empresarial<span class="text-yellow-500">.</span></h3>
 
               <p class="text-xl md:text-2xl text-slate-800 font-medium w-full text-wrap text-center xl:text-start">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe ut aut amet ratione maiores fuga laudantium eos, itaque quaerat numquam non nam, consequuntur natus tempore perferendis, odit ducimus deleniti?
               </p>
             </div>
             
-            <a href="#contato" class="internal-link bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
+            <a href="contato.html" class="bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
               <p class="text-slate-800 font-semibold text-xl md:text-2xl ml-1">Entrar em Contato</p>
-              <div class="flex justify-center absolute top-0 left-0 bg-slate-800 w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
-              <p class="hidden group-hover/button:block absolute top-3 text-slate-200 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
+              <div class="flex justify-center absolute top-0 left-0 bg-parallax w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
+              <p class="hidden group-hover/button:block absolute top-3 text-yellow-500 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
             </a>
           </div>
 
@@ -226,27 +226,27 @@
 
         <div id="divisoria" class="block xl:hidden w-screen h-20 bg-parallax"></div>
 
-        <div id="servicos_container" class="flex flex-col justify-between items-center xl:flex-row gap-20 xl:gap-0 w-full px-5 xl:px-0">
+        <div id="servicos_container" class="flex flex-col-reverse justify-between items-center xl:flex-row gap-20 xl:gap-0 w-full px-5 xl:px-0">
 
           <div class="flex flex-col justify-between items-center xl:items-end gap-10 w-full md:w-2/3 xl:w-[600px]">
             <div class="flex flex-col justify-start items-center xl:items-end gap-10">
 
-              <h3 class="text-4xl md:text-5xl text-slate-800 font-medium w-full text-end">Direito Imobiliário<span class="text-yellow-500">.</span></h3>
+              <h3 class="text-4xl md:text-5xl text-slate-800 font-medium w-full text-center xl:text-end">Direito Imobiliário<span class="text-yellow-500">.</span></h3>
 
               <p class="text-xl md:text-2xl text-slate-800 font-medium w-full text-wrap text-center xl:text-end">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe ut aut amet ratione maiores fuga laudantium eos, itaque quaerat numquam non nam, consequuntur natus tempore perferendis, odit ducimus deleniti?
               </p>
             </div>
             
-            <a href="#contato" class="internal-link bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
+            <a href="contato.html" class="bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
               <p class="text-slate-800 font-semibold text-xl md:text-2xl ml-1">Entrar em Contato</p>
-              <div class="flex justify-center absolute top-0 left-0 bg-slate-800 w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
-              <p class="hidden group-hover/button:block absolute top-3 text-slate-200 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
+              <div class="flex justify-center absolute top-0 left-0 bg-parallax w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
+              <p class="hidden group-hover/button:block absolute top-3 text-yellow-500 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
             </a>
           </div>
 
-          <div id="servicos-imagem" class="flex flex-col justify-center items-center w-full md:w-2/3 xl:w-[600px] h-[350px] xl:h-[500px] bg-[url('./src/assets/images/direito-imobiliario.jpg')] bg-cover relative shadow-2xl">
-            <ion-icon name="home-sharp" class="absolute -top-14 !text-7xl text-yellow-500 bg-parallax p-5 rounded-full z-10"></ion-icon>
+          <div id="servicos-imagem" class="flex flex-col justify-center items-center w-full md:w-2/3 xl:w-[600px] h-[400px] md:h-[500px] bg-[url('./src/assets/images/direito-imobiliario.jpg')] bg-cover relative shadow-2xl">
+            <ion-icon name="home-sharp" class="absolute -top-10 sm:-top-12 md:-top-14 text-5xl sm:text-6xl md:text-7xl text-yellow-500 bg-parallax p-5 rounded-full z-10"></ion-icon>
             <div class="absolute top-0 bg-parallax border-b-4 border-yellow-500 h-16 w-full"></div>
           </div>
 

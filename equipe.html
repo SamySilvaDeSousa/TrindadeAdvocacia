@@ -19,8 +19,8 @@
 
 <body class="flex flex-col overflow-x-hidden relative bg-parallax overflow-y-hidden">
 
-  <div id="refresh-page" class="fixed top-0 flex justify-center items-center bg-slate-800 w-screen h-screen z-50">
-    <img src="./src/assets/images/logo.png" alt="" class="w-80">
+  <div id="refresh-page" class="fixed top-0 flex justify-center items-center bg-parallax w-screen h-screen z-50">
+    <img src="./src/assets/images/logo.png" alt="" class="w-80 animate-ping">
   </div>
 
   <div id="whatsapp-button" class="group/whatsappPing">
@@ -54,7 +54,7 @@
         <a href="sobre.html" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Sobre</a>
         <a href="servicos.html" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Serviços</a>
         <a href="#equipe" class="internal-link hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Nossa Equipe</a>
-        <a href="#contato" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Contato</a>
+        <a href="contato.html" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Contato</a>
       </nav>
 
       <nav id="navbar-mobile" class="internal-link fixed top-[7.5rem] right-0 hidden flex-col justify-center items-center gap-5 bg-[url('./src/assets/images/navbar-bg.png')] bg-cover cursor-pointer w-full z-50">
@@ -102,13 +102,13 @@
 
                 <a href="https://www.instagram.com/" target="_blank" class="bg-transparent border-primary border-slate-800 border-l-0 relative group">
                   <ion-icon name="logo-instagram" class="block group-hover:hidden text-2xl md:text-3xl cursor-pointer text-slate-900 p-2 pl-3"></ion-icon>
-                  <div class="absolute top-0 left-0 bg-slate-800 w-1 group-hover:w-full h-full transition-all"></div>
-                  <ion-icon name="logo-instagram" class="hidden group-hover:block text-2xl md:text-3xl cursor-pointer group-hover:text-yellor-500 p-2 pl-3"></ion-icon>
+                  <div class="absolute top-0 left-0 bg-parallax w-1 group-hover:w-full h-full transition-all"></div>
+                  <ion-icon name="logo-instagram" class="hidden group-hover:block text-2xl md:text-3xl cursor-pointer group-hover:text-yellow-500 p-2 pl-3"></ion-icon>
                 </a>
                 <a href="https://www.linkedin.com/" target="_blank" class="bg-transparent border-primary border-slate-800 border-l-0 relative group">
                   <ion-icon name="logo-linkedin" class="block group-hover:hidden text-2xl md:text-3xl cursor-pointer text-slate-900 p-2 pl-3"></ion-icon>
-                  <div class="absolute top-0 left-0 bg-slate-800 w-1 group-hover:w-full h-full transition-all"></div>
-                  <ion-icon name="logo-linkedin" class="hidden group-hover:block text-2xl md:text-3xl cursor-pointer group-hover:text-yellor-500 p-2 pl-3"></ion-icon>
+                  <div class="absolute top-0 left-0 bg-parallax w-1 group-hover:w-full h-full transition-all"></div>
+                  <ion-icon name="logo-linkedin" class="hidden group-hover:block text-2xl md:text-3xl cursor-pointer group-hover:text-yellow-500 p-2 pl-3"></ion-icon>
                 </a>
                 
               </div>
@@ -117,16 +117,22 @@
               <p class="text-xl md:text-2xl text-slate-800 font-medium w-full text-wrap text-center xl:text-start">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe ut aut amet ratione maiores fuga laudantium eos, itaque quaerat numquam non nam, consequuntur natus tempore perferendis, odit ducimus deleniti?
               </p>
-              <div class="flex flex-col justify-start items-start gap-5">
-                <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800"><ion-icon name="construct-sharp" class="text-3xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon> Direito Trabalhista</p>
-                <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800"><ion-icon name="cart-sharp" class="text-3xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon> Direito do Consumidor</p>
+              <div class="flex flex-col justify-start items-center xl:items-start gap-10 xl:gap-5">
+                <div class="flex flex-col xl:flex-row justify-center items-center gap-5">
+                  <ion-icon name="construct-sharp" class="text-3xl sm:text-4xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon>
+                  <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800">Direito Trabalhista</p>
+                </div>
+                <div class="flex flex-col xl:flex-row justify-center items-center gap-5">
+                  <ion-icon name="cart-sharp" class="text-3xl sm:text-4xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon>
+                  <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800">Direito do Consumidor</p>
+                </div>
               </div>
             </div>
             
-            <a href="#contato" class="internal-link bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
+            <a href="contato.html" class="bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
               <p class="text-slate-800 font-semibold text-xl md:text-2xl ml-1">Entrar em Contato</p>
-              <div class="flex justify-center absolute top-0 left-0 bg-slate-800 w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
-              <p class="hidden group-hover/button:block absolute top-3 text-slate-200 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
+              <div class="flex justify-center absolute top-0 left-0 bg-parallax w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
+              <p class="hidden group-hover/button:block absolute top-3 text-yellow-500 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
             </a>
           </div>
 
@@ -143,13 +149,13 @@
 
                 <a href="https://www.instagram.com/" target="_blank" class="bg-transparent border-primary border-slate-800 border-l-0 relative group">
                   <ion-icon name="logo-instagram" class="block group-hover:hidden text-2xl md:text-3xl cursor-pointer text-slate-900 p-2 pl-3"></ion-icon>
-                  <div class="absolute top-0 left-0 bg-slate-800 w-1 group-hover:w-full h-full transition-all"></div>
-                  <ion-icon name="logo-instagram" class="hidden group-hover:block text-2xl md:text-3xl cursor-pointer group-hover:text-yellor-500 p-2 pl-3"></ion-icon>
+                  <div class="absolute top-0 left-0 bg-parallax w-1 group-hover:w-full h-full transition-all"></div>
+                  <ion-icon name="logo-instagram" class="hidden group-hover:block text-2xl md:text-3xl cursor-pointer group-hover:text-yellow-500 p-2 pl-3"></ion-icon>
                 </a>
                 <a href="https://www.linkedin.com/" target="_blank" class="bg-transparent border-primary border-slate-800 border-l-0 relative group">
                   <ion-icon name="logo-linkedin" class="block group-hover:hidden text-2xl md:text-3xl cursor-pointer text-slate-900 p-2 pl-3"></ion-icon>
-                  <div class="absolute top-0 left-0 bg-slate-800 w-1 group-hover:w-full h-full transition-all"></div>
-                  <ion-icon name="logo-linkedin" class="hidden group-hover:block text-2xl md:text-3xl cursor-pointer group-hover:text-yellor-500 p-2 pl-3"></ion-icon>
+                  <div class="absolute top-0 left-0 bg-parallax w-1 group-hover:w-full h-full transition-all"></div>
+                  <ion-icon name="logo-linkedin" class="hidden group-hover:block text-2xl md:text-3xl cursor-pointer group-hover:text-yellow-500 p-2 pl-3"></ion-icon>
                 </a>
 
                 <h3 class="text-4xl md:text-6xl text-slate-800 font-medium text-start xl:text-end w-full">Sicrana<span class="text-yellow-500">.</span></h3>
@@ -160,16 +166,22 @@
               <p class="text-xl md:text-2xl text-slate-800 font-medium w-full text-wrap text-center xl:text-end">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe ut aut amet ratione maiores fuga laudantium eos, itaque quaerat numquam non nam, consequuntur natus tempore perferendis, odit ducimus deleniti?
               </p>
-              <div class="flex flex-col justify-start items-end gap-5">
-                <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800">Direito da Família<ion-icon name="heart-sharp" class="text-3xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon></p>
-                <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800">Direito Previdenciário<ion-icon name="people-sharp" class="text-3xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon></p>
+              <div class="flex flex-col justify-start items-center xl:items-end gap-10 xl:gap-5">
+                <div class="flex flex-col-reverse xl:flex-row justify-center items-center gap-5">
+                  <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800">Direito da Família</p>
+                  <ion-icon name="heart-sharp" class="text-3xl sm:text-4xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon>
+                </div>
+                <div class="flex flex-col-reverse xl:flex-row justify-center items-center gap-5">
+                  <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800">Direito Previdenciário</p>
+                  <ion-icon name="people-sharp" class="text-3xl sm:text-4xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon>
+                </div>
               </div>
             </div>
             
-            <a href="#contato" class="internal-link bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
+            <a href="contato.html" class="bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
               <p class="text-slate-800 font-semibold text-xl md:text-2xl ml-1">Entrar em Contato</p>
-              <div class="flex justify-center absolute top-0 left-0 bg-slate-800 w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
-              <p class="hidden group-hover/button:block absolute top-3 text-slate-200 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
+              <div class="flex justify-center absolute top-0 left-0 bg-parallax w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
+              <p class="hidden group-hover/button:block absolute top-3 text-yellow-500 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
             </a>
           </div>
 
@@ -198,13 +210,13 @@
 
                 <a href="https://www.instagram.com/" target="_blank" class="bg-transparent border-primary border-slate-800 border-l-0 relative group">
                   <ion-icon name="logo-instagram" class="block group-hover:hidden text-2xl md:text-3xl cursor-pointer text-slate-900 p-2 pl-3"></ion-icon>
-                  <div class="absolute top-0 left-0 bg-slate-800 w-1 group-hover:w-full h-full transition-all"></div>
-                  <ion-icon name="logo-instagram" class="hidden group-hover:block text-2xl md:text-3xl cursor-pointer group-hover:text-yellor-500 p-2 pl-3"></ion-icon>
+                  <div class="absolute top-0 left-0 bg-parallax w-1 group-hover:w-full h-full transition-all"></div>
+                  <ion-icon name="logo-instagram" class="hidden group-hover:block text-2xl md:text-3xl cursor-pointer group-hover:text-yellow-500 p-2 pl-3"></ion-icon>
                 </a>
                 <a href="https://www.linkedin.com/" target="_blank" class="bg-transparent border-primary border-slate-800 border-l-0 relative group">
                   <ion-icon name="logo-linkedin" class="block group-hover:hidden text-2xl md:text-3xl cursor-pointer text-slate-900 p-2 pl-3"></ion-icon>
-                  <div class="absolute top-0 left-0 bg-slate-800 w-1 group-hover:w-full h-full transition-all"></div>
-                  <ion-icon name="logo-linkedin" class="hidden group-hover:block text-2xl md:text-3xl cursor-pointer group-hover:text-yellor-500 p-2 pl-3"></ion-icon>
+                  <div class="absolute top-0 left-0 bg-parallax w-1 group-hover:w-full h-full transition-all"></div>
+                  <ion-icon name="logo-linkedin" class="hidden group-hover:block text-2xl md:text-3xl cursor-pointer group-hover:text-yellow-500 p-2 pl-3"></ion-icon>
                 </a>
                 
               </div>
@@ -213,16 +225,22 @@
               <p class="text-xl md:text-2xl text-slate-800 font-medium w-full text-wrap text-center xl:text-start">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe ut aut amet ratione maiores fuga laudantium eos, itaque quaerat numquam non nam, consequuntur natus tempore perferendis, odit ducimus deleniti?
               </p>
-              <div class="flex flex-col justify-start items-start gap-5">
-                <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800"><ion-icon name="stats-chart-sharp" class="text-3xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon> Direito Empresarial</p>
-                <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800"><ion-icon name="home-sharp" class="text-3xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon> Direito Imobiliário</p>
+              <div class="flex flex-col justify-start items-center xl:items-start gap-10 xl:gap-5">
+                <div class="flex flex-col xl:flex-row justify-center items-center gap-5">
+                  <ion-icon name="stats-chart-sharp" class="text-3xl sm:text-4xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon>
+                  <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800">Direito Empresarial</p>
+                </div>
+                <div class="flex flex-col xl:flex-row justify-center items-center gap-5">
+                  <ion-icon name="home-sharp" class="text-3xl sm:text-4xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon>
+                  <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800">Direito Imobiliário</p>
+                </div>
               </div>
             </div>
             
-            <a href="#contato" class="internal-link bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
+            <a href="contato.html" class="bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mt-10 relative group/button">
               <p class="text-slate-800 font-semibold text-xl md:text-2xl ml-1">Entrar em Contato</p>
-              <div class="flex justify-center absolute top-0 left-0 bg-slate-800 w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
-              <p class="hidden group-hover/button:block absolute top-3 text-slate-200 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
+              <div class="flex justify-center absolute top-0 left-0 bg-parallax w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
+              <p class="hidden group-hover/button:block absolute top-3 text-yellow-500 font-semibold text-xl md:text-2xl ml-[3px]">Entrar em Contato</p>
             </a>
           </div>
 

@@ -19,8 +19,8 @@
 
 <body class="flex flex-col overflow-x-hidden relative bg-parallax overflow-y-hidden">
 
-  <div id="refresh-page" class="fixed top-0 flex justify-center items-center bg-slate-800 w-screen h-screen z-50">
-    <img src="./src/assets/images/logo.png" alt="" class="w-80">
+  <div id="refresh-page" class="fixed top-0 flex justify-center items-center bg-parallax w-screen h-screen z-50">
+    <img src="./src/assets/images/logo.png" alt="" class="w-80 animate-ping">
   </div>
 
   <div id="whatsapp-button" class="group/whatsappPing">
@@ -39,31 +39,36 @@
   -->
 
   <header class="flex flex-col justify-center items-center fixed w-full bg-[url('./src/assets/images/navbar-bg.png')] bg-cover bg-fixed border-yellow-500 z-40">
-    <div class="flex justify-between items-center gap-5 py-5 px-5 xl:px-0 w-full xl:w-[1280px]">
-      <a id="logo" class="flex justify-center items-center gap-1 xl:gap-5" href="index.html">
-        <img src="./src/assets/images/logo.png" alt="Logo" width="80px">
+    <div class="flex justify-between items-center gap-5 py-5 px-5 xl:px-0 w-full xl:w-[1280px] relative">
+      <a id="logo" class="flex justify-center items-center gap-1 xl:gap-5 z-50" href="index.html">
+        <img src="./src/assets/images/logo.png" alt="Logo" class="w-[50px] md:w-[80px]">
         <div class="flex flex-col">
-          <span class="text-3xl xl:text-4xl text-yellow-500">Trindade</span>
-          <span class="text-lg xl:text-xl ml-2">Advocacia</span>
+          <span class="text-2xl md:text-3xl xl:text-4xl text-yellow-500">Trindade</span>
+          <span class="text-sm md:text-lg xl:text-xl ml-2">Advocacia</span>
         </div>
       </a>
       <nav id="navbar-desktop" class="flex justify-center items-center gap-5 cursor-pointer z-50">
-        <button><span class="material-symbols-outlined !text-5xl block xl:!hidden">menu</span></button>
+        <button id="menu-hamburger" class="flex xl:hidden flex-col justify-center items-center gap-2 w-9 cursor-pointer">
+          <span id="span1" class="bg-slate-200 h-1 w-full"></span>
+          <span id="span2" class="bg-slate-200 h-1 w-full"></span>
+          <span id="span3" class="bg-slate-200 h-1 w-full"></span>
+        </button>
 
         <a href="#inicio" class="internal-link hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Ínicio</a>
         <a href="sobre.html" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Sobre</a>
         <a href="servicos.html" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Serviços</a>
         <a href="equipe.html" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Nossa Equipe</a>
-        <a href="#contato" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Contato</a>
+        <a href="contato.html" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Contato</a>
       </nav>
 
-      <nav id="navbar-mobile" class="internal-link fixed top-[7.5rem] right-0 hidden flex-col justify-center items-center gap-5 bg-[url('./src/assets/images/navbar-bg.png')] bg-cover cursor-pointer w-full z-50">
+      <nav id="navbar-mobile" class="fixed top-[5.7rem] md:top-[7.5rem] right-0 hidden flex-col justify-center items-center bg-parallax-dark cursor-pointer w-full z-50">
         <a href="#inicio" class="internal-link block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Ínicio</a>
-        <a href="#sobre" class="internal-link block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Sobre</a>
-        <a href="#servicos" class="internal-link block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Serviços</a>
-        <a href="#equipe" class="internal-link block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Nossa Equipe</a>
-        <a href="#contato" class="internal-link block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Contato</a>
+        <a href="sobre.html" class="block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Sobre</a>
+        <a href="servicos.html" class="block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Serviços</a>
+        <a href="equipe.html" class="block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Nossa Equipe</a>
+        <a href="contato.html" class="block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Contato</a>
       </nav>
+      <div id="header-overlay" class="hidden fixed bottom-0 left-0 w-screen h-screen bg-overlay z-30"></div>
 
     </div>
   </header>
@@ -78,12 +83,12 @@
     ██ ██   ████ ██  ██████ ██  ██████  
     -->
 
-    <section id="inicio" class="flex justify-center items-center bg-[url('./src/assets/images/home-bg.png')] bg-cover bg-fixed w-full mt-[120px]" style="height: calc(100vh - 120px);">
+    <section id="inicio" class="flex justify-center items-center bg-parallax xl:!bg-[url('./src/assets/images/home-bg.png')] bg-cover bg-fixed w-full mt-[120px]" style="height: calc(100vh - 120px);">
       
-      <div class="flex flex-col justify-center items-center lg:items-start gap-5 p-5 xl:p-0 w-full xl:w-[1280px]">
-        <h1 class="text-5xl sm:text-7xl w-full sm:w-[640px] text-center lg:text-start !font-normal">Somos um escritório de <span class="text-yellow-500">Advogados Especialistas</span>.</h1>
-        <div class="flex flex-col lg:flex-row justify-center items-center gap-4 lg:gap-1 w-full lg:w-[500px]">
-          <span class="bg-slate-400 w-full h-[4px]"></span>
+      <div class="flex flex-col justify-center items-center xl:items-start gap-5 p-5 xl:p-0 w-full xl:w-[1280px]">
+        <h1 class="text-5xl sm:text-7xl w-full sm:w-[640px] text-center xl:text-start !font-normal">Somos um escritório de <span class="text-yellow-500">Advogados Especialistas</span>.</h1>
+        <div class="flex flex-col xl:flex-row justify-center items-center gap-4 xl:gap-1 w-full xl:w-[500px]">
+          <span class="bg-slate-400 w-full sm:w-96 h-[4px]"></span>
           <p class="text-2xl text-slate-400 text-nowrap ml-3">Há mais de 10 anos advogando.</p>
         </div>
 
@@ -110,26 +115,35 @@
         <div id="sobre-texto_container" class="flex flex-col-reverse xl:flex-row justify-between items-center xl:items-start gap-10 w-full">
 
           <div class="mx-5 sm:mx-0 h-full shadow-2xl">
-            <h4 class="text-2xl sm:text-3xl font-semibold text-center text-yellow-500 bg-parallax border-b-4 border-yellow-500 p-3 sm:p-5">Há mais de 10 anos no mercado</h4>
+            <h4 class="text-2xl sm:text-3xl font-semibold text-center text-yellow-500 bg-parallax border-b-4 border-yellow-500 py-5">Há mais de 10 anos no mercado</h4>
             <img src="./src/assets/images/escritorio.jpg" alt="Escritório de Advocacia" class="w-[600px] xl:h-[540px] object-cover">
           </div>
 
           <div class="flex flex-col justify-start items-center xl:items-start gap-10 max-w-[600px]">
-            <p class="text-xl md:text-2xl text-slate-800 font-medium w-full text-wrap text-center xl:text-start">
+            <p class="text-xl md:text-2xl text-slate-800 font-medium w-full text-wrap text-center xl:text-start max-sm:px-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo saepe ut aut amet ratione maiores fuga laudantium eos, itaque quaerat numquam non nam, consequuntur natus tempore perferendis, odit ducimus deleniti?
             </p>
-            <p class="text-xl md:text-2xl text-slate-800 font-medium w-full text-wrap text-center xl:text-start">
+            <p class="text-xl md:text-2xl text-slate-800 font-medium w-full text-wrap text-center xl:text-start max-sm:px-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eius quis provident maxime.
             </p>
-            <div class="flex flex-col justify-start items-start gap-5">
-              <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800"><ion-icon name="body-sharp" class="text-3xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon> Dedicação ao Cliente</p>
-              <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800"><ion-icon name="shield-sharp" class="text-3xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon> Transparência e Confiança</p>
-              <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800"><ion-icon name="star-sharp" class="text-3xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon> Compromisso com a Excelência</p>
+            <div class="flex flex-col justify-center items-center xl:items-start gap-10 xl:gap-5">
+              <div class="flex flex-col xl:flex-row justify-center items-center gap-5">
+                <ion-icon name="body-sharp" class="text-3xl sm:text-4xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon>
+                <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800">Dedicação ao Cliente</p>
+              </div>
+              <div class="flex flex-col xl:flex-row justify-center items-center gap-5">
+                <ion-icon name="shield-sharp" class="text-3xl sm:text-4xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon>
+                <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800">Transparência e Confiança</p>
+              </div>
+              <div class="flex flex-col xl:flex-row justify-center items-center gap-5">
+                <ion-icon name="star-sharp" class="text-3xl sm:text-4xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon>
+                <p class="flex justify-center items-center gap-3 text-xl md:text-2xl font-medium text-slate-800">Compromisso com a Excelência</p>
+              </div>
             </div>
             <a href="sobre.html" class="bg-transparent border-primary border-slate-800 border-l-0 py-3 px-7 mb-10 xl:mb-0 relative group/button">
               <p class="text-slate-800 font-semibold text-xl md:text-2xl ml-1">Saiba Mais</p>
               <div class="flex justify-center absolute top-0 left-0 bg-parallax w-1 group-hover/button:w-full h-full transition-all overflow-hidden"></div>
-              <p class="hidden group-hover/button:block absolute top-3 text-slate-200 font-semibold text-xl md:text-2xl ml-[3px]">Saiba Mais</p>
+              <p class="hidden group-hover/button:block absolute top-3 text-yellow-500 font-semibold text-xl md:text-2xl ml-[3px]">Saiba Mais</p>
             </a>
           </div>
 
@@ -153,10 +167,10 @@
           <div class="flex flex-col justify-between items-start gap-20 w-[370px] sm:w-[400px] h-[25rem] sm:h-[29rem] bg-[url('./src/assets/images/direito-do-trabalho.webp')] bg-cover bg-right relative shadow-2xl group/card">
             <div class="flex flex-col justify-between items-start overflow-hidden absolute top-0 bg-slate-200 h-[5px] group-hover/card:h-full transition-all duration-300 w-full">
               <p class="text-slate-800 text-xl md:text-2xl font-semibold px-5 pt-2 mt-20 z-10">Atuação para  defesa de empresas e para defesa de funcionários ou ex funcionários.</p>
-              <a href="#contato" class="internal-link bg-transparent bot-slate-800 font-bold border-secondary border-l-0 py-3 px-7 m-5 mt-[3.25rem] relative group/button">
-                <p class="text-slate-900 font-semibold text-xl md:text-2xl ml-1">Fale conosco</p>
+              <a href="servicos.html" class="bg-transparent font-bold border-secondary border-l-0 py-3 px-7 m-5 mt-[3.25rem] relative group/button">
+                <p class="text-slate-900 font-semibold text-xl md:text-2xl ml-1">Saiba Mais</p>
                 <div class="absolute top-0 left-0 bg-parallax w-1 group-hover/button:w-full h-full transition-all"></div>
-                <p class="hidden group-hover/button:block absolute top-3 text-slate-200 font-semibold text-xl md:text-2xl ml-1">Fale conosco</p>
+                <p class="hidden group-hover/button:block absolute top-3 text-yellow-500 font-semibold text-xl md:text-2xl ml-1">Saiba Mais</p>
               </a>
             </div>
             
@@ -167,10 +181,10 @@
           <div class="flex flex-col justify-between items-start gap-20 w-[370px] sm:w-[400px] h-[25rem] sm:h-[29rem] bg-[url('./src/assets/images/direito-do-consumidor.webp')] bg-cover bg-center relative shadow-2xl group/card">
             <div class="flex flex-col justify-between items-start absolute top-0 overflow-hidden bg-slate-200 h-[4px] group-hover/card:h-full transition-all duration-300 w-full">
               <p class="text-slate-800 text-xl md:text-2xl font-semibold px-5 pt-2 mt-20 z-10">Atuação para defesa dos direitos dos consumidores em situações de abuso e conflitos com empresas.</p>
-              <a href="#contato" class="internal-link bg-transparent bot-slate-800 font-bold border-secondary border-l-0 py-3 px-7 m-5 mt-[3.25rem] relative group/button">
-                <p class="text-slate-900 font-semibold text-xl md:text-2xl ml-1">Fale conosco</p>
+              <a href="servicos.html" class="bg-transparent font-bold border-secondary border-l-0 py-3 px-7 m-5 mt-[3.25rem] relative group/button">
+                <p class="text-slate-900 font-semibold text-xl md:text-2xl ml-1">Saiba Mais</p>
                 <div class="absolute top-0 left-0 bg-slate-800 w-1 group-hover/button:w-full h-full transition-all"></div>
-                <p class="hidden group-hover/button:block absolute top-3 text-slate-200 font-semibold text-xl md:text-2xl ml-1">Fale conosco</p>
+                <p class="hidden group-hover/button:block absolute top-3 text-yellow-500 font-semibold text-xl md:text-2xl ml-1">Saiba Mais</p>
               </a>
             </div>
             
@@ -181,10 +195,10 @@
           <div class="flex flex-col justify-between items-start gap-20 w-[370px] sm:w-[400px] h-[25rem] sm:h-[29rem] bg-[url('./src/assets/images/direito-da-familia.webp')] bg-cover bg-left relative shadow-2xl group/card">
             <div class="flex flex-col justify-between items-start overflow-hidden absolute top-0 bg-slate-200 h-[5px] group-hover/card:h-full transition-all duration-300 w-full">
               <p class="text-slate-800 text-xl md:text-2xl font-semibold px-5 pt-2 mt-20 z-10">Orientação e assistência para obtenção de aposentadorias e benefícios previdenciários.</p>
-              <a href="#contato" class="internal-link bg-transparent bot-slate-800 font-bold border-secondary border-l-0 py-3 px-7 m-5 mt-[3.25rem] relative group/button">
-                <p class="text-slate-900 font-semibold text-xl md:text-2xl ml-1">Fale conosco</p>
+              <a href="servicos.html" class="bg-transparent font-bold border-secondary border-l-0 py-3 px-7 m-5 mt-[3.25rem] relative group/button">
+                <p class="text-slate-900 font-semibold text-xl md:text-2xl ml-1">Saiba Mais</p>
                 <div class="absolute top-0 left-0 bg-slate-800 w-1 group-hover/button:w-full h-full transition-all"></div>
-                <p class="hidden group-hover/button:block absolute top-3 text-slate-200 font-semibold text-xl md:text-2xl ml-1">Fale conosco</p>
+                <p class="hidden group-hover/button:block absolute top-3 text-yellow-500 font-semibold text-xl md:text-2xl ml-1">Saiba Mais</p>
               </a>
             </div>
             
@@ -195,10 +209,10 @@
           <div class="flex flex-col justify-between items-start gap-20 w-[370px] sm:w-[400px] h-[25rem] sm:h-[29rem] bg-[url('./src/assets/images/direito-previdenciario.webp')] bg-cover bg-center relative shadow-2xl group/card">
             <div class="flex flex-col justify-between items-start overflow-hidden absolute top-0 bg-slate-200 h-[5px] group-hover/card:h-full transition-all duration-300 w-full">
               <p class="text-slate-800 text-xl md:text-2xl font-semibold px-5 pt-2 mt-20 z-10">Orientação e assistência para obtenção de aposentadorias e benefícios previdenciários.</p>
-              <a href="#contato" class="internal-link bg-transparent bot-slate-800 font-bold border-secondary border-l-0 py-3 px-7 m-5 mt-[3.25rem] relative group/button">
-                <p class="text-slate-900 font-semibold text-xl md:text-2xl ml-1">Fale conosco</p>
+              <a href="servicos.html" class="bg-transparent font-bold border-secondary border-l-0 py-3 px-7 m-5 mt-[3.25rem] relative group/button">
+                <p class="text-slate-900 font-semibold text-xl md:text-2xl ml-1">Saiba Mais</p>
                 <div class="absolute top-0 left-0 bg-slate-800 w-1 group-hover/button:w-full h-full transition-all"></div>
-                <p class="hidden group-hover/button:block absolute top-3 text-slate-200 font-semibold text-xl md:text-2xl ml-1">Fale conosco</p>
+                <p class="hidden group-hover/button:block absolute top-3 text-yellow-500 font-semibold text-xl md:text-2xl ml-1">Saiba Mais</p>
               </a>
             </div>
             
@@ -209,10 +223,10 @@
           <div class="flex flex-col justify-between items-start gap-20 w-[370px] sm:w-[400px] h-[25rem] sm:h-[29rem] bg-[url('./src/assets/images/direito-empresarial.webp')] bg-cover bg-center relative shadow-2xl group/card">
             <div class="flex flex-col justify-between items-start overflow-hidden absolute top-0 bg-slate-200 h-[5px] group-hover/card:h-full transition-all duration-300 w-full">
               <p class="text-slate-800 text-xl md:text-2xl font-semibold px-5 pt-2 mt-20 z-10">Consultoria jurídica para gestão empresarial e resolução de conflitos corporativos.</p>
-              <a href="#contato" class="internal-link bg-transparent bot-slate-800 font-bold border-secondary border-l-0 py-3 px-7 m-5 mt-[3.25rem] relative group/button">
-                <p class="text-slate-900 font-semibold text-xl md:text-2xl ml-1">Fale conosco</p>
+              <a href="servicos.html" class="bg-transparent font-bold border-secondary border-l-0 py-3 px-7 m-5 mt-[3.25rem] relative group/button">
+                <p class="text-slate-900 font-semibold text-xl md:text-2xl ml-1">Saiba Mais</p>
                 <div class="absolute top-0 left-0 bg-slate-800 w-1 group-hover/button:w-full h-full transition-all"></div>
-                <p class="hidden group-hover/button:block absolute top-3 text-slate-200 font-semibold text-xl md:text-2xl ml-1">Fale conosco</p>
+                <p class="hidden group-hover/button:block absolute top-3 text-yellow-500 font-semibold text-xl md:text-2xl ml-1">Saiba Mais</p>
               </a>
             </div>
             
@@ -223,10 +237,10 @@
           <div class="flex flex-col justify-between items-start gap-20 w-[370px] sm:w-[400px] h-[25rem] sm:h-[29rem] bg-[url('./src/assets/images/direito-imobiliario.jpg')] bg-cover bg-center relative shadow-2xl group/card">
             <div class="flex flex-col justify-between items-start overflow-hidden absolute top-0 bg-slate-200 h-[5px] group-hover/card:h-full transition-all duration-300 w-full">
               <p class="text-slate-800 text-xl md:text-2xl font-semibold px-5 pt-2 mt-20 z-10">Orientação e defesa em questões fiscais e tributárias para empresas e indivíduos.</p>
-              <a href="#contato" class="internal-link bg-transparent bot-slate-800 font-bold border-secondary border-l-0 py-3 px-7 m-5 mt-[3.25rem] relative group/button">
-                <p class="text-slate-900 font-semibold text-xl md:text-2xl ml-1">Fale conosco</p>
+              <a href="servicos.html" class="bg-transparent font-bold border-secondary border-l-0 py-3 px-7 m-5 mt-[3.25rem] relative group/button">
+                <p class="text-slate-900 font-semibold text-xl md:text-2xl ml-1">Saiba Mais</p>
                 <div class="absolute top-0 left-0 bg-slate-800 w-1 group-hover/button:w-full h-full transition-all"></div>
-                <p class="hidden group-hover/button:block absolute top-3 text-slate-200 font-semibold text-xl md:text-2xl ml-1">Fale conosco</p>
+                <p class="hidden group-hover/button:block absolute top-3 text-yellow-500 font-semibold text-xl md:text-2xl ml-1">Saiba Mais</p>
               </a>
             </div>
             
@@ -346,26 +360,26 @@
 
             <div class="flex flex-col justify-center gap-10">
                             
-              <div class="flex flex-col gap-1">
-                <div class="flex max-xl:flex-col items-center gap-3">
-                  <ion-icon name="mail" class="text-4xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon>
+              <div class="flex flex-col">
+                <div class="flex max-xl:flex-col items-center gap-5">
+                  <ion-icon name="mail" class="text-3xl sm:text-4xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon>
                   <p class="text-xl md:text-2xl">Email</p>
                 </div>
-                <p class="xl:ml-16 text-lg md:text-xl text-slate-400 text-wrap max-xl:text-center">trindadeadvocacia@loremipsum.com</p>
+                <p class="xl:ml-[4.5rem] text-lg md:text-xl text-slate-400 text-wrap max-xl:text-center">trindadeadvocacia@loremipsum.com</p>
               </div>
-              <div class="flex flex-col gap-1">
-                <div class="flex max-xl:flex-col items-center gap-3">
-                  <ion-icon name="call" class="text-4xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon>
+              <div class="flex flex-col">
+                <div class="flex max-xl:flex-col items-center gap-5">
+                  <ion-icon name="call" class="text-3xl sm:text-4xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon>
                   <p class="text-xl md:text-2xl">Telefone</p>
                 </div>
-                <p class="xl:ml-16 text-lg md:text-xl text-slate-400 text-wrap max-xl:text-center">+99 (99) 99999 - 9999</p>
+                <p class="xl:ml-[4.5rem] text-lg md:text-xl text-slate-400 text-wrap max-xl:text-center">+99 (99) 99999 - 9999</p>
               </div>
-              <div class="flex flex-col gap-1">
-                <div class="flex max-xl:flex-col items-center gap-3">
-                  <ion-icon name="location" class="text-4xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon>
+              <div class="flex flex-col">
+                <div class="flex max-xl:flex-col items-center gap-5">
+                  <ion-icon name="location" class="text-3xl sm:text-4xl text-slate-800 bg-yellow-500 p-2 rounded-full"></ion-icon>
                   <p class="text-xl md:text-2xl">Localização</p>
                 </div>
-                <p class="xl:ml-16 text-lg md:text-xl text-slate-400 text-wrap max-xl:text-center">Av. Lorem Ipsum - Lorem, Ipsum, 99999-99</p>
+                <p class="xl:ml-[4.5rem] text-lg md:text-xl text-slate-400 text-wrap max-xl:text-center">Av. Lorem Ipsum - Lorem, Ipsum, 99999-99</p>
               </div>
 
             </div>
@@ -403,9 +417,9 @@
             </div>
           </form>
 
-          <div id="map" class="relative w-full h-[18.75rem] px-5 mt-[84px] shadow-2xl">
-            <h3 class="absolute -top-[74px] sm:-top-[74px] right-5 left-5 text-2xl sm:text-3xl font-semibold text-center text-slate-800 bg-yellow-500 border-b-4 border-slate-800 p-4">Nossa Localização</h3>
-            <iframe class="bg-slate-200 w-full h-full" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7918.130556860588!2d-34.860188!3d-7.118434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd515ec18f43%3A0x6d14bf1ce44d91da!2sUNINASSAU%20-%20Jo%C3%A3o%20Pessoa!5e0!3m2!1spt-BR!2sbr!4v1700878551194!5m2!1spt-BR!2sbr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div id="map" class="relative w-full h-[18.75rem] px-5 mt-[84px]">
+            <h3 class="absolute -top-[70px] right-5 left-5 text-2xl sm:text-3xl font-semibold text-center text-slate-800 bg-yellow-500 border-b-4 border-slate-800 py-4">Nossa Localização</h3>
+            <iframe class="bg-slate-200 w-full h-full shadow-2xl" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7918.130556860588!2d-34.860188!3d-7.118434!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd515ec18f43%3A0x6d14bf1ce44d91da!2sUNINASSAU%20-%20Jo%C3%A3o%20Pessoa!5e0!3m2!1spt-BR!2sbr!4v1700878551194!5m2!1spt-BR!2sbr" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
 
         </div>
@@ -447,6 +461,7 @@
   ███████  ██████ ██   ██ ██ ██         ██   
   -->
 
+  <script src="./src/js/menuMobile.js"></script>
   <script src="./src/js/navbar.js"></script>
 
   <!--ÍCONES-->
