@@ -1,7 +1,7 @@
 <div align="center">
 
   # Site Institucional de uma Advocacia
-  Criado com o objetivo de simular um site profissional de um escritório de advogados
+  Criado com o objetivo de simular um site profissional de um escritório de advogados.
 
   <br>
 
