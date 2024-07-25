@@ -39,31 +39,36 @@
   -->
 
   <header class="flex flex-col justify-center items-center fixed w-full bg-[url('./src/assets/images/navbar-bg.png')] bg-cover bg-fixed border-yellow-500 z-40">
-    <div class="flex justify-between items-center gap-5 py-5 px-5 xl:px-0 w-full xl:w-[1280px]">
-      <a id="logo" class="flex justify-center items-center gap-1 xl:gap-5" href="index.html">
-        <img src="./src/assets/images/logo.png" alt="Logo" width="80px">
+    <div class="flex justify-between items-center gap-5 py-5 px-5 xl:px-0 w-full xl:w-[1280px] relative">
+      <a id="logo" class="flex justify-center items-center gap-1 xl:gap-5 z-50" href="index.html">
+        <img src="./src/assets/images/logo.png" alt="Logo" class="w-[50px] md:w-[80px]">
         <div class="flex flex-col">
-          <span class="text-3xl xl:text-4xl text-yellow-500">Trindade</span>
-          <span class="text-lg xl:text-xl ml-2">Advocacia</span>
+          <span class="text-2xl md:text-3xl xl:text-4xl text-yellow-500">Trindade</span>
+          <span class="text-sm md:text-lg xl:text-xl ml-2">Advocacia</span>
         </div>
       </a>
       <nav id="navbar-desktop" class="flex justify-center items-center gap-5 cursor-pointer z-50">
-        <button><span class="material-symbols-outlined !text-5xl block xl:!hidden">menu</span></button>
+        <button id="menu-hamburger" class="flex xl:hidden flex-col justify-center items-center gap-2 w-9 cursor-pointer">
+          <span id="span1" class="bg-slate-200 h-1 w-full"></span>
+          <span id="span2" class="bg-slate-200 h-1 w-full"></span>
+          <span id="span3" class="bg-slate-200 h-1 w-full"></span>
+        </button>
 
         <a href="index.html" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Ínicio</a>
-        <a href="equipe.html" class="internal-link hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Sobre</a>
+        <a href="sobre.html" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Sobre</a>
         <a href="servicos.html" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Serviços</a>
         <a href="equipe.html" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Nossa Equipe</a>
-        <a href="#contato" class="hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Contato</a>
+        <a href="#contato" class="internal-link hidden xl:block text-xl py-5 cursor-pointer hover:text-yellow-500 relative">Contato</a>
       </nav>
 
-      <nav id="navbar-mobile" class="internal-link fixed top-[7.5rem] right-0 hidden flex-col justify-center items-center gap-5 bg-[url('./src/assets/images/navbar-bg.png')] bg-cover cursor-pointer w-full z-50">
-        <a href="#inicio" class="internal-link block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Ínicio</a>
-        <a href="#sobre" class="internal-link block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Sobre</a>
-        <a href="#servicos" class="internal-link block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Serviços</a>
-        <a href="#equipe" class="internal-link block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Nossa Equipe</a>
+      <nav id="navbar-mobile" class="fixed top-[5.7rem] md:top-[7.5rem] right-0 hidden flex-col justify-center items-center bg-parallax-dark cursor-pointer w-full z-50">
+        <a href="index.html" class="block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Ínicio</a>
+        <a href="sobre.html" class="block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Sobre</a>
+        <a href="servicos.html" class="block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Serviços</a>
+        <a href="equipe.html" class="block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Nossa Equipe</a>
         <a href="#contato" class="internal-link block xl:hidden text-xl py-5 cursor-pointer w-full text-center relative hover:bg-yellow-500 hover:text-slate-900 hover:font-bold">Contato</a>
       </nav>
+      <div id="header-overlay" class="hidden fixed bottom-0 left-0 w-screen h-screen bg-overlay z-30"></div>
 
     </div>
   </header>
@@ -220,6 +225,7 @@
   ███████  ██████ ██   ██ ██ ██         ██   
   -->
 
+  <script src="./src/js/menuMobile.js"></script>
   <script src="./src/js/navbar.js"></script>
 
   <!--ÍCONES-->
