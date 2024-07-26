@@ -8,7 +8,8 @@ h2 {
 h2 {
   position: relative;
 }
-h2::before {
+h2::before,
+footer h4::before {
   content: '';
   display: block;
   width: 4px;

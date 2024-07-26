@@ -196,7 +196,7 @@
       </div>
 
       <div id="back-to-top" class="flex justify-center items-center absolute -bottom-7 left-0 right-0">
-        <a href="#contato" class="flex justify-center items-center internal-link bg-slate-800 hover:bg-yellow-500 border-primary py-[0.625rem] px-3 rounded-full group shadow-2xl">
+        <a href="#contato" class="internal-link flex justify-center items-center bg-slate-800 hover:bg-yellow-500 border-primary py-[0.625rem] px-3 rounded-full group shadow-2xl">
           <span class="material-symbols-outlined !text-4xl text-yellow-500 group-hover:text-slate-900">arrow_upward</span>
         </a>
       </div>
@@ -213,14 +213,72 @@
   ██       ██████   ██████     ██    ███████ ██   ██ 
   -->
 
-  <footer class="flex flex-col xl:flex-row justify-center items-center bg-parallax w-full gap-5 xl:gap-10 p-4 pt-16">
-    <img src="./src/assets/images/logo.png" alt="Logo" class="w-20 bg-slate-200 p-2 rounded-full">
-    <p class="flex flex-col xl:flex-row  justify-center items-center gap-10 text-yellow-500 text-2xl text-center font-semibold">
-      2024 &copy; Desenvolvido por Samy Silva de Sousa
-      <a href="https://github.com/SamySilvaDeSousa" target="_blank" class="flex justify-center items-center">
-        <ion-icon name="logo-github" class="text-slate-200 !text-4xl hover:text-yellow-500"></ion-icon>
+  <footer class="flex flex-col justify-center items-center bg-parallax w-full gap-5 xl:gap-5 pt-16">
+
+    <div id="footer-top" class="flex justify-between items-start xl:w-[1280px] mb-10">
+      <a href="index.html" id="footer-logo" class="flex flex-col justify-center items-center gap-5">
+        <img class="self-start w-40 bg-parallax-dark p-2 rounded-full shadow-2xl" src="./src/assets/images/logo.png" alt="Logo da Trindade Advocacia.">
+        <div class="flex flex-col justify-center items-center">
+          <span class="text-2xl md:text-3xl xl:text-4xl text-yellow-500">Trindade</span>
+          <span class="text-sm md:text-lg xl:text-xl text-slate-200 font-medium">Advocacia</span>
+        </div>
       </a>
-    </p>
+
+      <div id="footer-menu" class="flex flex-col gap-10">
+        <h4 class="relative text-3xl text-slate-200 font-semibold ml-6">Conteúdo</h4>
+        <div id="footer-navlinks" class="flex flex-col justify-start items-center xl:items-start gap-5">
+          <a href="index.html" class="flex justify-center items-center gap-1 text-xl cursor-pointer text-slate-100 hover:text-yellow-500 relative hover:translate-x-3 transition-all group">
+            <ion-icon name="arrow-forward-outline" class="text-slate-200 group-hover:text-yellow-500 text-2xl"></ion-icon>
+            Ínicio
+          </a>
+          <a href="sobre.html" class="flex justify-center items-center gap-1 text-xl cursor-pointer text-slate-200 hover:text-yellow-500 relative hover:translate-x-3 transition-all group">
+            <ion-icon name="arrow-forward-outline" class="text-slate-200 group-hover:text-yellow-500 text-2xl"></ion-icon>
+            Sobre
+          </a>
+          <a href="servicos.html" class="flex justify-center items-center gap-1 text-xl cursor-pointer text-slate-200 hover:text-yellow-500 relative hover:translate-x-3 transition-all group">
+            <ion-icon name="arrow-forward-outline" class="text-slate-200 group-hover:text-yellow-500 text-2xl"></ion-icon>
+            Serviços
+          </a>
+          <a href="equipe.html" class="flex justify-center items-center gap-1 text-xl cursor-pointer text-slate-200 hover:text-yellow-500 relative hover:translate-x-3 transition-all group">
+            <ion-icon name="arrow-forward-outline" class="text-slate-200 group-hover:text-yellow-500 text-2xl"></ion-icon>
+            Nossa Equipe
+          </a>
+          <a href="#contato" class="internal-link flex justify-center items-center gap-1 text-xl cursor-pointer text-slate-200 hover:text-yellow-500 relative hover:translate-x-3 transition-all group">
+            <ion-icon name="arrow-forward-outline" class="text-slate-200 group-hover:text-yellow-500 text-2xl"></ion-icon>
+            Contato
+          </a>
+        </div>
+      </div>
+      
+      <div id="footer-contato" class="flex flex-col justify-start items-start gap-10">
+        <h4 class="relative text-3xl text-slate-8200 font-semibold ml-6">Contato</h4>
+        <div id="footer-contato_wrapper" class="flex flex-col gap-5">
+          <div class="flex justify-start items-center gap-5">
+            <ion-icon name="mail" class="text-3xl sm:text-4xl text-yellow-500 bg-parallax-dark p-2 rounded-full"></ion-icon>
+            <p class="text-lg md:text-xl text-slate-200 text-wrap max-xl:text-center">trindadeadvocacia@loremipsum.com</p>
+          </div>
+          <div class="flex justify-start items-center gap-5">
+            <ion-icon name="call" class="text-3xl sm:text-4xl text-yellow-500 bg-parallax-dark p-2 rounded-full"></ion-icon>
+            <p class="text-lg md:text-xl text-slate-200 text-wrap max-xl:text-center">(99) 99999 - 9999</p>
+          </div>
+          <div class="flex justify-start items-center gap-5">
+            <ion-icon name="location" class="text-3xl sm:text-4xl text-yellow-500 bg-parallax-dark p-2 rounded-full"></ion-icon>
+            <p class="text-lg md:text-xl text-slate-200 text-wrap max-xl:text-center">Av. Lorem Ipsum - Lorem, Ipsum, 99999-99</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="footer-bottom" class="flex justify-center items-center gap-1 bg-parallax-dark w-full py-5">
+      <p class="flex flex-col xl:flex-row justify-center items-center text-slate-400 text-2xl text-center">
+        2024 &copy; Desenvolvido por Samy Silva de Sousa |
+      </p>
+      <a href="https://github.com/SamySilvaDeSousa" target="_blank" class="flex justify-center items-center">
+        <ion-icon name="logo-github" class="text-slate-400 !text-4xl hover:text-yellow-500"></ion-icon>
+      </a>
+    </div>
+    
   </footer>
 
   <!--
