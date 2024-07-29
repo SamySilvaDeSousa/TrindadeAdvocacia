@@ -1,13 +1,18 @@
 h1,
-h1 span,
-h2 {
+h1 span {
   font-family: "Playfair Display", serif !important;
   font-weight: 700 !important;
 }
+h2 {
+  font-family: "Playfair Display", serif !important;
+  font-weight: 600 !important;
+}
 
+h1,
 h2 {
   position: relative;
 }
+h1::before,
 h2::before,
 footer h4::before {
   content: '';
@@ -18,4 +23,7 @@ footer h4::before {
   bottom: 0;
   left: -20px;
   background-color: #eab308;
+}
+#inicio h1::before {
+  display: none;
 }

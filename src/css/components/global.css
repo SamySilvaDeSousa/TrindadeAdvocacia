@@ -6,7 +6,8 @@
 }
 
 .font-primary {
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif !important;
+  font-weight: 700 !important;
 }
 
 .bg-parallax {
@@ -24,4 +25,15 @@
 }
 .bg-overlay {
   background-color: #0f172a5d;
+}
+
+summary::marker {
+  content: '';
+}
+details summary span {
+  transition: all 100ms linear;
+}
+details[open] summary span {
+  transform: rotate(45deg) !important;
+  scale: 1.1;
 }
